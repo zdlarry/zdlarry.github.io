@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Zheng Dong (董政)"
-description              : "Direct doctoral student at Zhejiang University"
+description              : "Ph.D. student at Zhejiang University"
 repository               : "zdlarry/zdlarry.github.io"
 google_scholar_stats_use_cdn : false
 
@@ -30,7 +30,7 @@ author:
   googlescholar    : "https://scholar.google.com/citations?user=TnNj45YAAAAJ"
   email            : "zhengdong@zju.edu.cn"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
-  cv               : "files/resume.pdf"
+  resume_EN        : "files/resume.pdf"
   uri              :
   bitbucket        :
   codepen          :
