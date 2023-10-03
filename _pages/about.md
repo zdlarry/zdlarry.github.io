@@ -43,6 +43,7 @@ Hi, this is Zheng Dong. I am a 5th-year (2019~) Ph.D. student in the State Key L
 [School of Computer Science and Engineering](https://cse.csu.edu.cn/index.htm)<br>
 [Central South University](https://www.csu.edu.cn/)<br>
 
+<span class='anchor' id='publications'></span>
 
 ## Publications 
 
@@ -79,6 +80,7 @@ International Conference on Computer Vision (**ICCV**) 2021 <br>
 [<i class="fas fa-fw fa-video"></i>Video](https://www.youtube.com/watch?v=O5F20FLRrsw) /
 [<i class="fab fa-fw fa-github"></i>Github](https://github.com/zdlarr/Location-aware-SIRR)<br>
 
+<span class='anchor' id='distinctions'></span>
 
 ## Distinctions
 
@@ -87,6 +89,8 @@ Excellent Postgraduate Student Award, Zhejiang University (**2020, 2022-2023**)
 Outstanding Graduate Student, Central South University (**2019**)
 
 National Scholarship, Central South University (**2016**)
+
+<span class='anchor' id='academic-service'></span>
 
 ## Academic Service
 
