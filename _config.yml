@@ -22,7 +22,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Zheng Dong (董政)"
-  avatar           : "images/rendering.png"
+  avatar           : "files/rendering.png"
   bio              : "Zhejiang University"
   location         : "Hangzhou, China"
   employer         :
