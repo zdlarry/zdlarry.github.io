@@ -66,7 +66,7 @@ Annual Conference on Neural Information Processing Systems (**NeurIPS**) 2022 (<
 [<i class="fas fa-fw fa-globe"></i>Project](https://sites.google.com/view/twoscale) /
 [<i class="fas fa-fw fa-file-pdf"></i>Paper](./files/papers/gtpifu.pdf) /
 [<i class="fas fa-fw fa-video"></i>Video](https://www.youtube.com/watch?v=K6Dx6-jJ-S4&t=6s) /
-[<i class="fab fa-fw fa-file-pdf"></i>OpenReview](https://openreview.net/forum?id=yqVWRZ3gfmg)<br>
+[<i class="fas fa-fw fa-file-pdf"></i>OpenReview](https://openreview.net/forum?id=yqVWRZ3gfmg)<br>
 
 ---
 
@@ -77,7 +77,7 @@ Annual Conference on Neural Information Processing Systems (**NeurIPS**) 2022 (<
 International Conference on Computer Vision (**ICCV**) 2021 <br>
 [<i class="fas fa-fw fa-file-pdf"></i>Paper](./files/papers/larr.pdf) /
 [<i class="fas fa-fw fa-video"></i>Video](https://www.youtube.com/watch?v=O5F20FLRrsw) /
-[<i class="fab fa-fw fa-file-pdf"></i>Github](https://github.com/zdlarr/Location-aware-SIRR)<br>
+[<i class="fab fa-fw fa-github"></i>Github](https://github.com/zdlarr/Location-aware-SIRR)<br>
 
 
 ## Distinctions
