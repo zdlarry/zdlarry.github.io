@@ -25,6 +25,8 @@ Hi, this is Zheng Dong. I am a 5th-year (2019~) Ph.D. student in the State Key L
 
 **Resume**: [[resume.pdf]](./files/resume.pdf)
 
+<span class='anchor' id='background'></span>
+
 ## Background
 
 <img align="left" width="90" height="90" src="./images/zju-logo.png" style="padding-right:20px; padding-top:0px"/>
@@ -40,6 +42,7 @@ Hi, this is Zheng Dong. I am a 5th-year (2019~) Ph.D. student in the State Key L
 **Bachelor of Computer Science. Sep. 2015 - Jun. 2019**<br>
 [School of Computer Science and Engineering](https://cse.csu.edu.cn/index.htm)<br>
 [Central South University](https://www.csu.edu.cn/)<br>
+
 
 
 # Publications 
@@ -62,13 +65,4 @@ Hi, this is Zheng Dong. I am a 5th-year (2019~) Ph.D. student in the State Key L
 - *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 
-# Educations
-- *2019.06 - 2022.04 (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2015.09 - 2019.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 
-# Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
-
-# 💻 Internships
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
