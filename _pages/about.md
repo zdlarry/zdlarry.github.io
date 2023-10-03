@@ -19,11 +19,16 @@ redirect_from:
 
 ## About Me
 
-Hi, this is Zheng Dong.
+Hi, this is Zheng Dong. I am a 5th-year (2019~) Ph.D. student in the State Key Lab of CAD&CG, Zhejiang University, advised by Prof. [Weiwei Xu](http://www.cad.zju.edu.cn/home/weiweixu/weiweixu_en.htm). My research focuses on **human-centric 3D vision** and **2D image processing**, including image-based 3D human reconstruction, human volumetric capture, 2D image reflection removal, etc.
+
+**E-mail**: zhengdong AT zju.edu.cn
+
+**Resume**: [[resume.pdf]](./files/resume.pdf)
+
+## Background
 
 
-# News
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+
 
 # Publications 
 
