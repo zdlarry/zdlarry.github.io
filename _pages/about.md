@@ -64,7 +64,7 @@ ACM Trans. on Graphics, 42(6), (Proc. ACM <b>SIGGRAPH Asia</b> 2023)<br>
 
 <b>Geometry-aware Two-scale PIFu Representation for Human Reconstruction</b><br>
 <b>Zheng Dong</b>, Ke Xu, Ziheng Duan, Hujun Bao, Weiwei Xu, Rynson W.H. Lau<br>
-Annual Conference on Neural Information Processing Systems (**NeurIPS**) 2022 (<b>Spotlight</b>)<br>
+Annual Conference on Neural Information Processing Systems (**NeurIPS**) 2022 (<font color="#dd0000"><b>Spotlight</b></font>)<br>
 [<i class="fas fa-fw fa-globe"></i>Project](https://sites.google.com/view/twoscale) /
 [<i class="fas fa-fw fa-file-pdf"></i>Paper](./files/papers/gtpifu.pdf) /
 [<i class="fas fa-fw fa-video"></i>Video](https://www.youtube.com/watch?v=K6Dx6-jJ-S4&t=6s) /
