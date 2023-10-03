@@ -51,7 +51,7 @@ Hi, this is Zheng Dong. I am a 5th-year (2019~) Ph.D. student in the State Key L
 
 <b>SAILOR: Synergizing Radiance and Occupancy Fields for Live Human Performance Capture</b><br>
 <b>Zheng Dong</b>, Ke Xu, Yaoan Gao, Qilin Sun, Hujun Bao, Weiwei Xu, Rynson W.H. Lau<br>
-<font color=Grey>ACM Trans. on Graphics, 42(6), (Proc. ACM <b>SIGGRAPH Asia</b> 2023)</font><br>
+ACM Trans. on Graphics, 42(6), (Proc. ACM <b>SIGGRAPH Asia</b> 2023)<br>
 [<i class="fas fa-fw fa-globe"></i>Project]() /
 [<i class="fas fa-fw fa-file-pdf"></i>Paper](./files/papers/sailor.pdf) /
 [<i class="fas fa-fw fa-video"></i>Video](https://www.youtube.com/watch?v=88tX22Z0Dz0) /
@@ -77,7 +77,7 @@ Annual Conference on Neural Information Processing Systems (**NeurIPS**) 2022 (<
 
 <b>Location-aware Single Image Reflection Removal</b><br>
 <b>Zheng Dong</b>, Ke Xu, Yin Yang, Hujun Bao, Weiwei Xu, Rynson W.H. Lau<br>
-International Conference on Computer Vision (**ICCV**) 2021 <br>
+International Conference on Computer Vision (**ICCV**) 2021<br>
 [<i class="fas fa-fw fa-file-pdf"></i>Paper](./files/papers/larr.pdf) /
 [<i class="fas fa-fw fa-video"></i>Video](https://www.youtube.com/watch?v=O5F20FLRrsw) /
 [<i class="fab fa-fw fa-github"></i>Github](https://github.com/zdlarr/Location-aware-SIRR)<br>
