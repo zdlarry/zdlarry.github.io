@@ -27,7 +27,7 @@ Hi, this is Zheng Dong. I am a 5th-year (2019~) Ph.D. student in the State Key L
 
 ## Background
 
-<img align="left" width="80" height="80" src="./images/zju-logo.png" style="padding-right:20px; padding-top:20px"/>
+<img align="left" width="90" height="90" src="./images/zju-logo.png" style="padding-right:20px; padding-top:0px"/>
 
 **Ph.D. Student. Sep. 2019 - Jun. 2024 (Expected)**<br>
 [State Key Laboratory of CAD&CG](http://www.cad.zju.edu.cn/index.html)<br>
@@ -35,7 +35,7 @@ Hi, this is Zheng Dong. I am a 5th-year (2019~) Ph.D. student in the State Key L
 
 ---
 
-<img align="left" width="80" height="80" src="./images/csu-logo.png" style="padding-right:20px; padding-top:20px"/>
+<img align="left" width="90" height="90" src="./images/csu-logo.png" style="padding-right:20px; padding-top:0px"/>
 
 **Bachelor of Computer Science. Sep. 2015 - Jun. 2019**<br>
 [School of Computer Science and Engineering](https://cse.csu.edu.cn/index.htm)<br>
