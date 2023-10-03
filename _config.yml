@@ -22,7 +22,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Zheng Dong (董政)"
-  avatar           : "images/android-chrome-512x512.png"
+  avatar           : "images/.png"
   bio              : "Zhejiang University"
   location         : "Hangzhou, China"
   employer         :
@@ -30,7 +30,7 @@ author:
   googlescholar    : "https://scholar.google.com/citations?user=TnNj45YAAAAJ"
   email            : "zhengdong@zju.edu.cn"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
-  cv               : "files/CV.pdf"
+  cv               : "files/resume.pdf"
   uri              :
   bitbucket        :
   codepen          :
