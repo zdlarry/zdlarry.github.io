@@ -47,7 +47,7 @@ Hi, this is Zheng Dong. I am a 5th-year (2019~) Ph.D. student in the State Key L
 
 ## Publications 
 
-<img align="left" width="215" height="110" src="./images/siga23-sailor.png" style="padding-right:20px; padding-top:0px"/>
+<img align="left" width="215" height="110" src="./images/papers/siga23-sailor.png" style="padding-right:20px; padding-top:0px"/>
 
 <b>SAILOR: Synergizing Radiance and Occupancy Fields for Live Human Performance Capture</b><br>
 <b>Zheng Dong</b>, Ke Xu, Yaoan Gao, Qilin Sun, Hujun Bao, Weiwei Xu, Rynson W.H. Lau<br>
@@ -59,7 +59,7 @@ ACM Trans. on Graphics, 42(6), (Proc. ACM **SIGGRAPH Asia** 2023)<br>
 
 ---
 
-<img align="left" width="215" height="110" src="./images/nips22-gtpifu.png" style="padding-right:20px; padding-top:0px"/>
+<img align="left" width="215" height="110" src="./images/papers/nips22-gtpifu.png" style="padding-right:20px; padding-top:0px"/>
 
 <b>Geometry-aware Two-scale PIFu Representation for Human Reconstruction</b><br>
 <b>Zheng Dong</b>, Ke Xu, Ziheng Duan, Hujun Bao, Weiwei Xu, Rynson W.H. Lau<br>
@@ -71,7 +71,7 @@ Annual Conference on Neural Information Processing Systems (**NeurIPS**) 2022 (<
 
 ---
 
-<img align="left" width="215" height="110" src="./images/iccv21-larr.png" style="padding-right:20px; padding-top:0px"/>
+<img align="left" width="215" height="110" src="./images/papers/iccv21-larr.png" style="padding-right:20px; padding-top:0px"/>
 
 <b>Location-aware Single Image Reflection Removal</b><br>
 <b>Zheng Dong</b>, Ke Xu, Yin Yang, Hujun Bao, Weiwei Xu, Rynson W.H. Lau<br>
