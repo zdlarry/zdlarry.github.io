@@ -44,25 +44,51 @@ Hi, this is Zheng Dong. I am a 5th-year (2019~) Ph.D. student in the State Key L
 [Central South University](https://www.csu.edu.cn/)<br>
 
 
-
 ## Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
+<img align="left" width="215" height="110" src="./images/siga23-sailor.png" style="padding-right:20px; padding-top:0px"/>
 
-[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
+<b>SAILOR: Synergizing Radiance and Occupancy Fields for Live Human Performance Capture</b><br>
+<b>Zheng Dong</b>, Ke Xu, Yaoan Gao, Qilin Sun, Hujun Bao, Weiwei Xu, Rynson W.H. Lau<br>
+ACM Trans. on Graphics, 42(6), (Proc. ACM **SIGGRAPH Asia** 2023)<br>
+[<i class="fas fa-fw fa-globe"></i>Project]() /
+[<i class="fas fa-fw fa-file-pdf"></i>Paper](./files/papers/sailor.pdf) /
+[<i class="fas fa-fw fa-video"></i>Video](https://www.youtube.com/watch?v=88tX22Z0Dz0) /
+[<i class="fab fa-fw fa-github"></i>Github](https://github.com/zdlarr/SAILOR)<br>
 
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
+---
 
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-</div>
-</div>
+<img align="left" width="215" height="110" src="./images/nips22-gtpifu.png" style="padding-right:20px; padding-top:0px"/>
 
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
+<b>Geometry-aware Two-scale PIFu Representation for Human Reconstruction</b><br>
+<b>Zheng Dong</b>, Ke Xu, Ziheng Duan, Hujun Bao, Weiwei Xu, Rynson W.H. Lau<br>
+Annual Conference on Neural Information Processing Systems (**NeurIPS**) 2022 (<b>Spotlight</b>)<br>
+[<i class="fas fa-fw fa-globe"></i>Project](https://sites.google.com/view/twoscale) /
+[<i class="fas fa-fw fa-file-pdf"></i>Paper](./files/papers/gtpifu.pdf) /
+[<i class="fas fa-fw fa-video"></i>Video](https://www.youtube.com/watch?v=K6Dx6-jJ-S4&t=6s) /
+[<i class="fab fa-fw fa-file-pdf"></i>OpenReview](https://openreview.net/forum?id=yqVWRZ3gfmg)<br>
 
-# Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+---
 
+<img align="left" width="215" height="110" src="./images/iccv21-larr.png" style="padding-right:20px; padding-top:0px"/>
+
+<b>Location-aware Single Image Reflection Removal</b><br>
+<b>Zheng Dong</b>, Ke Xu, Yin Yang, Hujun Bao, Weiwei Xu, Rynson W.H. Lau<br>
+International Conference on Computer Vision (**ICCV**) 2021 <br>
+[<i class="fas fa-fw fa-file-pdf"></i>Paper](./files/papers/larr.pdf) /
+[<i class="fas fa-fw fa-video"></i>Video](https://www.youtube.com/watch?v=O5F20FLRrsw) /
+[<i class="fab fa-fw fa-file-pdf"></i>Github](https://github.com/zdlarr/Location-aware-SIRR)<br>
+
+
+## Distinctions
+
+Excellent Postgraduate Student Award, Zhejiang University (**2020, 2022-2023**)
+
+Outstanding Graduate Student, Central South University (**2019**)
+
+National Scholarship, Central South University (**2016**)
+
+## Academic Service
+
+**Reviewer**: IJCV, CVPR, CAVW, etc
 
