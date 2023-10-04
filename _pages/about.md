@@ -97,5 +97,5 @@ National Scholarship, Central South University (**2016**)
 
 ## Academic Service
 
-**Reviewer**: IJCV, CVPR, CAVW, etc
+**Reviewer**: IJCV, NeurIPS, CVPR, CAVW, etc
 
