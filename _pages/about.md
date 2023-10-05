@@ -60,7 +60,7 @@ ACM Trans. on Graphics, 42(6), (Proc. ACM <b>SIGGRAPH Asia</b> 2023)<br>
 
 ---
 
-<img align="left" width="280" height="140" src="./images/papers/nips22-gtpifu.png" style="padding-right:20px; padding-top:0px"/>
+<img align="left" width="280" height="140" src="./images/papers/nips22-gtpifu.png" style="padding-right:20px; padding-top:5px"/>
 
 <b>Geometry-aware Two-scale PIFu Representation for Human Reconstruction</b><br>
 <b>Zheng Dong</b>, Ke Xu, Ziheng Duan, Hujun Bao, Weiwei Xu, Rynson W.H. Lau<br>
