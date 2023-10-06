@@ -52,7 +52,7 @@ Hi, this is Zheng Dong. I am a 5th-year (2019~) Ph.D. student in the State Key L
 <b>SAILOR: Synergizing Radiance and Occupancy Fields for Live Human Performance Capture</b><br>
 <b>Zheng Dong</b>, Ke Xu, Yaoan Gao, Qilin Sun, Hujun Bao, Weiwei Xu, Rynson W.H. Lau<br>
 ACM Trans. on Graphics, 42(6), (Proc. ACM <b>SIGGRAPH Asia</b> 2023)<br>
-[<i class="fas fa-fw fa-globe"></i>Project]() /
+[<i class="fas fa-fw fa-globe"></i>Project](https://zdlarry.github.io/projects/SAILOR) /
 [<i class="fas fa-fw fa-file-pdf"></i>Paper](./files/papers/sailor.pdf) /
 [<i class="fas fa-fw fa-video"></i>Video](https://www.youtube.com/watch?v=88tX22Z0Dz0) /
 [<i class="fab fa-fw fa-github"></i>Github](https://github.com/zdlarr/SAILOR)<br>
