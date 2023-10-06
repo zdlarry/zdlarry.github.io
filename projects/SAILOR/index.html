@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SAILOR: Synergizing Radiance and Occupancy Fields for Live Human Performance Capture</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  </head>
+
+  <!-- cover -->
+  <section>
+    <div class="jumbotron text-center mt-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>SAILOR: Synergizing Radiance and Occupancy Fields for Live Human Performance Capture</h2>
+            <h5 style="color:#5a6268;">SIGGRAPH Asia 2023 (Journal Track)</h5>
+            <!-- <h5 style="color:#5a6268;">(Journal Track)</h5> -->
+            <hr>
+            <h6> <a href="https://zdlarry.github.io/" target="_blank"><b>Zheng Dong</b><sup>1</sup></a>,
+                <a href="https://kkbless.github.io/" target="_blank">Ke Xu<sup>2</sup></a>, 
+                Yaoan Gao<sup>1</sup>, 
+                <a href="https://sds.cuhk.edu.cn/teacher/489" target="_blank">Qilin Sun<sup>3,4</sup></a>, 
+                <a href="http://www.cad.zju.edu.cn/home/bao/" target="_blank">Hujun Bao<sup>1</sup></a>,
+                <a href="http://www.cad.zju.edu.cn/home/weiweixu/weiweixu_en.htm" target="_blank"><b>Weiwei Xu</b><sup>*1</sup></a>,
+                <a href="https://www.cs.cityu.edu.hk/~rynson/" target="_blank">Rynson W.H. Lau<sup>2</sup></a>
+            </h6>
+            <p><sup>1</sup>State Key Laboratory of CAD&CG, Zhejiang University&#20&#20&#20&#20&#20&#20<sup>2</sup>City University of Hong Kong<br>
+               <sup>3</sup>The Chinese University of Hong Kong, Shenzhen&#20&#20&#20&#20&#20&#20<sup>4</sup>Point Spread</p>
+            <!-- <p> <a class="btn btn-secondary btn-lg" href="" role="button">Paper</a> 
+                <a class="btn btn-secondary btn-lg" href="" role="button">Code</a> 
+                <a class="btn btn-secondary btn-lg" href="" role="button">Data</a> </p> -->
+
+            <div class="row justify-content-center">
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://zdlarry.github.io/files/papers/sailor.pdf" role="button"  target="_blank">
+                    <i class="fa fa-file-pdf-o"></i>&#20&#20Paper</a> </p>
+              </div>
+              <div class="column">
+                <p class="mb-5"><a class="btn btn-large btn-light" href="https://www.youtube.com/watch?v=88tX22Z0Dz0" role="button"  target="_blank">
+                  <i class="fa fa-youtube"></i>&#20&#20Video</a> </p>
+            </div>
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com/zdlarr/SAILOR" role="button"  target="_blank">
+                    <i class="fa fa-github"></i>&#20&#20Github</a> </p>
+              </div>
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com/zdlarr/SAILOR/#data" role="button"  target="_blank">
+                    <i class="fa fa-database"></i>&#20&#20Data</a> </p>
+              </div>
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://zdlarry.github.io/files/papers/SAILOR_SUPP.pdf" role="button"  target="_blank">
+                    <i class="fa fa-file-pdf-o"></i>&#20&#20Supplementary</a> </p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- abstract -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h4><b>Abstract</b></h4>
+          <hr style="margin-top:0px">
+          <img src="assets/teaser_sailor.png" width="85%" alt=""/>
+          <h6 style="color:#8899a5; margin-top:15px;" ><b>TL;DR:</b> We propose <b>SAILOR</b>, a novel method for human free-view rendering and reconstruction from <b>very sparse (<i>e.g.</i>, 4) RGBD streams</b>. It learns a hybrid representation of radiance and occupancy fields, which can handle unseen performers without additional fine-tuning.</h6>
+          <div style="margin-top:15px;">
+            <video width="85%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+                <source src="assets/sailor_demo.mov" type="video/mp4">
+            </video>
+          </div>
+          <h6 style="color:#8899a5; margin-top:5px;" >Our free-view rendering results and bullet-time effects given input sparse RGBD streams on our real-captured dataset ( <b>Unseen performers</b> ).</h6>
+
+          <p class="text-left" style="margin-top:15px;">
+            Immersive user experiences in live VR/AR performances require a fast and accurate free-view rendering of the performers. Existing methods are mainly based on Pixel-aligned Implicit Functions (PIFu) or Neural Radiance Fields (NeRF). However, while PIFu-based methods usually fail to produce photorealistic view-dependent textures, NeRF-based methods typically lack local geometry accuracy and are computationally heavy (<i>e.g.</i>, dense sampling of 3D points, additional fine-tuning, or pose estimation). In this work, we propose a novel <b>generalizable method</b>, named SAILOR, to create high-quality human free-view videos from <b>very sparse RGBD live streams</b>. To produce view-dependent textures while preserving locally accurate geometry, we integrate PIFu and NeRF such that they work synergistically by conditioning the PIFu on depth and then rendering view-dependent textures through NeRF. Specifically, we propose a novel network, named SRONet, for this hybrid representation. SRONet can handle unseen performers <b>without fine-tuning</b>. Besides, a neural blending-based ray interpolation approach, a tree-based voxel-denoising scheme, and a parallel computing pipeline are incorporated to reconstruct and render live free-view videos <b>at 10 fps on average</b>. To evaluate the rendering performance, we construct a real-captured RGBD benchmark from 40 performers. Experimental results show that SAILOR outperforms existing human reconstruction and performance capture methods.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="container">
+      <div class="row">
+          <div class="col-12 text-center">
+            <h4><b>Method</b></h4>
+            <hr style="margin-top:0px">
+            <img src="assets/sailor_overview.png" width="100%" alt=""/>
+            <p style="margin-top:18px;" class="text-left">
+              Fig 1.&nbsp; <b>Overview of SAILOR</b>. Given RGBD streams captured by 4 Azure Kinect sensors as inputs, <b>(1)</b> a <i>Depth Denoising Module</i> first removes noise and fills the holes of raw depths conditioned on the RGB images. <b>(2)</b> With the denoised depths, a <i>Two-Layer Tree Structure</i> is constructed to store the global geometry in discretization. <b>(3)</b> Efficient <i>Ray-Voxel Intersection</i> and <i>Points Sampling</i> are performed for rendering. <b>(4)</b> A novel <i>SRONet</i> network is proposed to synergize the radiance and occupancy fields, for 3D reconstruction and free-view rendering. <b>(5)</b> The outputs of SRONet are then upsampled via <i>Ray Upsampling</i> and <i>Neural Blending</i> to produce the final results in 1𝑘 resolution.
+            </p>
+          </div>
+        </div>
+
+      </div>
+  </section>
+  <br>
+
+  <!-- overview video -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <h4><b>Overview Video</b></h4>
+            <hr style="margin-top:0px">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe style="clip-path: inset(1px 1px)" width="90%" height="90%" src="https://www.youtube.com/embed/88tX22Z0Dz0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h4><b>Results</b></h4>
+          <hr style="margin-top:0px">
+          <img src="assets/sailor_depth_denoising.png" width="85%" alt=""/>
+          <p style="margin-top:15px;"> Fig 2.&nbsp; <b>(1) <i>Depth Denoising Module</i></b>. Visualization of our depth denoising results on our real captured RGBD images.
+          </p>
+          <div style="margin-top:15px;">
+            <video width="85%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+                <source src="assets/sailor_static.mov" type="video/mp4">
+            </video>
+          </div>
+          <p style="margin-top:8px;"> Fig 3.&nbsp; <b>Static</b> 3D human reconstruction and free-view rendering results using four RGBD images.</p>
+          <div style="margin-top:15px;">
+            <video width="85%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+                <source src="assets/sailor_dynamic.mov" type="video/mp4">
+            </video>
+          </div>
+          <p style="margin-top:8px;"> Fig 4.&nbsp; <b>Dynamic</b> human free-view rendering results and bullet-time effects from four-view RGBD videos.</p>
+          <div style="margin-top:18px;">
+            <img src="assets/sailor_comparison.png" width="85%" alt=""/>
+          </div>
+          <p style="margin-top:8px;"> Fig 5.&nbsp; Visualization of <b>rendering comparisons</b> on our real-captured dataset (row 1-5) and the THuman2.0 dataset (row 6).</p>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h4><b>Interactive rendering</b></h4>
+          <hr style="margin-top:0px">
+          <div style="margin-top:15px;">
+            <video width="85%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+                <source src="assets/sailor_gui.mp4" type="video/mp4">
+            </video>
+          </div>
+          <p style="margin-top:8px;">Results of interactive rendering are obtained using a PC containing 2 Nvidia RTX 3090, an Intel i9-13900k, and an MSI Z790 god-like motherboard.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h4><b>Live demo</b></h4>
+          <hr style="margin-top:0px">
+          <div style="margin-top:15px;">
+            <video width="85%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+                <source src="assets/sailor_live.mp4" type="video/mp4">
+            </video>
+          </div>
+          <p style="margin-top:8px;">Results of the live demo are obtained using four (for full-body) or three (for portrait) Azure Kinect-V4 cameras, and the PC configured as above.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- citing -->
+  <div class="container">
+    <div class="row ">
+      <div class="col-12 text-center">
+          <h4><b>Citation</b></h4>
+          <hr style="margin-top:0px">
+              <pre class="text-left" style="background-color: #e9eeef;padding: 1.25em 1.5em">
+<code>@article{dong2023sailor,
+  author = {Zheng Dong, Xu Ke, Yaoan Gao, Qilin Sun, Hujun Bao, Weiwei Xu, Rynson W.H. Lau},
+  title = {SAILOR: Synergizing Radiance and Occupancy Fields for Live Human Performance Capture},
+  year = {2023},
+  journal = {ACM Transactions on Graphics (TOG)},
+  volume = {42},
+  number = {6},
+  doi = {10.1145/3618370},
+  publisher = {ACM}
+}</code></pre>
+          <hr>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
