@@ -23,6 +23,8 @@ Hi, this is Zheng Dong. I am a 5th-year (2019~) Ph.D. student in the State Key L
 
 **E-mail**: zhengdong AT zju.edu.cn
 
+**WeChat**: -zhengdong-
+
 **Resume**: [[resume.pdf]](./files/resume.pdf)
 
 <span class='anchor' id='background' style="padding-top:10px"></span>
