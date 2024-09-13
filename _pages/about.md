@@ -49,6 +49,19 @@ Hi, this is Zheng Dong. I am a 5th-year (2019~) Ph.D. student in the State Key L
 
 ## Publications 
 
+<img align="left" width="280" height="140" src="./images/papers/siga24.png" style="padding-right:20px; padding-top:0px"/>
+
+<b>Gaussian Surfel Splatting for Live Human Performance Capture</b><br>
+<b>Zheng Dong</b>, Ke Xu, Yaoan Gao, Hujun Bao, Weiwei Xu, Rynson W.H. Lau<br>
+ACM Trans. on Graphics, 43(6), (Proc. ACM <b>SIGGRAPH Asia</b> 2024)<br>
+[<i class="fas fa-fw fa-globe"></i>Project]() /
+[<i class="fas fa-fw fa-file-pdf"></i>Paper]() /
+[<i class="fas fa-fw fa-video"></i>Video]() /
+[<i class="fab fa-fw fa-github"></i>Github]()<br>
+*We propose a novel regressed-surface-point-based method, to leverage Gaussian surfel splatting and blending-based appearance enhancement, for human live free-view rendering from 4 RGBD sensors.*
+
+---
+
 <img align="left" width="280" height="140" src="./images/papers/siga23-sailor.png" style="padding-right:20px; padding-top:0px"/>
 
 <b>SAILOR: Synergizing Radiance and Occupancy Fields for Live Human Performance Capture</b><br>
