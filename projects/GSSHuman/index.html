@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gaussian Surfel Splatting for Live Human Performance Capture</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  </head>
+
+  <!-- cover -->
+  <section>
+    <div class="jumbotron text-center mt-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>Gaussian Surfel Splatting for Live Human Performance Capture</h2>
+            <h5 style="color:#5a6268;">SIGGRAPH Asia 2024 (Journal Track)</h5>
+            <!-- <h5 style="color:#5a6268;">(Journal Track)</h5> -->
+            <hr>
+            <h6> <a href="https://zdlarry.github.io/" target="_blank"><b>Zheng Dong</b></a><sup>1</sup>,&nbsp;
+                <a href="https://kkbless.github.io/" target="_blank">Ke Xu</a><sup>2</sup>,&nbsp;
+                <a href="https://yaoangao.com/" target="_blank">Yaoan Gao</a><sup>1</sup>,&nbsp;
+                <!-- <a href="https://sds.cuhk.edu.cn/teacher/489" target="_blank">Qilin Sun</a><sup>3,4</sup>,&nbsp;  -->
+                <a href="http://www.cad.zju.edu.cn/home/bao/" target="_blank">Hujun Bao</a><sup>1</sup>,&nbsp;
+                <a href="http://www.cad.zju.edu.cn/home/weiweixu/weiweixu_en.htm" target="_blank"><b>Weiwei Xu</b></a><sup>*1</sup>,&nbsp;
+                <a href="https://www.cs.cityu.edu.hk/~rynson/" target="_blank">Rynson W.H. Lau</a><sup>2</sup>
+            </h6>
+            <p><sup>1</sup>State Key Laboratory of CAD&CG, Zhejiang University&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>2</sup>City University of Hong Kong<br>
+               <!-- <sup>3</sup>The Chinese University of Hong Kong, Shenzhen&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>4</sup>Point Spread</p> -->
+            <!-- <p> <a class="btn btn-secondary btn-lg" href="" role="button">Paper</a> 
+                <a class="btn btn-secondary btn-lg" href="" role="button">Code</a> 
+                <a class="btn btn-secondary btn-lg" href="" role="button">Data</a> </p> -->
+
+            <div class="row justify-content-center">
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://zdlarry.github.io/files/papers/gsshuman.pdf" role="button"  target="_blank">
+                    <i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;Paper</a> </p>
+              </div>
+              <div class="column">
+                <p class="mb-5"><a class="btn btn-large btn-light" href="https://www.youtube.com/watch?v=MGIlBT_JZNk" role="button"  target="_blank">
+                  <i class="fa fa-youtube"></i>&nbsp;&nbsp;Video</a> </p>
+            </div>
+              <!-- <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="" role="button">
+                    <i class="fa fa-github"></i>&nbsp;&nbsp;Github</a> </p>
+              </div> -->
+              <!-- <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com/zdlarr/SAILOR/#data" role="button"  target="_blank">
+                    <i class="fa fa-database"></i>&nbsp;&nbsp;Data</a> </p>
+              </div> -->
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="" role="button">
+                    <i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;Slides</a> </p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- abstract -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3><b>Abstract</b></h3>
+          <hr style="margin-top:0px">
+          <img src="assets/teaser_gsshuman.png" width="88%" alt=""/>
+          <h6 style="color:#8899a5; margin-top:15px;" ><b>TL;DR : </b>We propose a novel <b style="color:#8899e5">Regressed-Surface-Point-Based</b> method, to leverage <b style="color:#8899e5">Gaussian Surfel Splatting</b> and <b style="color:#8899e5">Blending-Based Appearance Enhancement</b>, for human live free-view rendering from <b>4 RGBD</b> sensors.</h6>
+          <div style="margin-top:15px;">
+            <video width="85%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+                <source src="assets/demo_results.mp4" type="video/mp4">
+            </video>
+          </div>
+          <h6 style="color:#8899a5; margin-top:5px;" ><b style="color:#8899e5">Surface Point Cloud</b> and <b style="color:#8899e5">Free-View Rendering</b> from 4-View RGBD Streams ( <b style="color:#8899e5">Unseen Performers</b> ).</h6>
+
+          <p class="text-left" style="margin-top:15px;">
+            High-quality real-time rendering using user-affordable capture rigs is an essential property of human performance capture systems for real-world applications. However, state-of-the-art performance capture methods may not yield satisfactory rendering results under a <b style="color:#8899e5">very sparse (e.g., four) capture setting</b>. Specifically, neural radiance field (NeRF)-based methods and 3D Gaussian Splatting (3DGS)-based methods tend to produce local geometry errors for unseen performers, while occupancy field (PIFu)-based methods often produce unrealistic rendering results. In this paper, we propose a novel <b style="color:#8899e5">generalizable neural approach</b> to reconstruct and render the performers from very sparse RGBD streams in high quality. The core of our method is a novel <b style="color:#8899e5">point-based generalizable human (PGH)</b> representation conditioned on the pixel-aligned RGBD features. The PGH representation learns a surface implicit function for the regression of surface points and a Gaussian implicit function for parameterizing the radiance fields of the regressed surface points with 2D Gaussian surfels, and uses surfel splatting for fast rendering. We learn this hybrid human representation via two novel networks. First, we propose a novel <b style="color:#8899e5">point-regressing network (PRNet)</b> with a <b style="color:#8899e5">depth-guided point cloud initialization (DPI)</b> method to regress an accurate surface point cloud based on the denoised depth information. Second, we propose a novel neural <b style="color:#8899e5">blending-based surfel splatting network (SPNet)</b> to render high-quality geometries and appearances in novel views based on the regressed surface points and high-resolution RGBD features of adjacent views. Our method produces free-view human performance videos of <b style="color:#8899e5">1K resolution at 12 fps</b> on average. Experiments on two benchmarks show that our method outperforms state-of-the-art human performance capture methods.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="container">
+      <div class="row">
+          <div class="col-12 text-center">
+            <h3><b>Method</b></h3>
+            <hr style="margin-top:0px">
+            <img src="assets/gsshuman_pipeline.png" width="100%" alt=""/>
+            <p style="margin-top:18px;" class="text-left">
+              <!-- Fig 1.&nbsp; <b>Overview of SAILOR</b>. Given RGBD streams captured by 4 Azure Kinect sensors as inputs, <b>(1)</b> a <i>Depth Denoising Module</i> first removes noise and fills the holes of raw depths conditioned on the RGB images. <b>(2)</b> With the denoised depths, a <i>Two-Layer Tree Structure</i> is constructed to store the global geometry in discretization. <b>(3)</b> Efficient <i>Ray-Voxel Intersection</i> and <i>Points Sampling</i> are performed for rendering. <b>(4)</b> A novel <i>SRONet</i> network is proposed to synergize the radiance and occupancy fields, for 3D reconstruction and free-view rendering. <b>(5)</b> The outputs of SRONet are then upsampled via <i>Ray Upsampling</i> and <i>Neural Blending</i> to produce the final results in 1𝑘 resolution.
+               -->
+              Fig 1. Given a <b style="color:#8899e5">4-view RGBD live stream</b> captured via Azure Kinects as input: <b style="color:#8899e5">(1)</b> we first apply a depth denoising module [SAILOR, Dong et al. 2023] to reduce the noise in raw depth; <b style="color:#8899e5">(2)</b> a <b>Depth-guided Point Cloud Initialization (DPI)</b> method then leverages visual hull with depth guidance to construct a volume (closed) point set, which is near to the surface; <b style="color:#8899e5">(3)</b> a novel <b>Point-Regressing Network (PRNet)</b> is proposed to learn a surface implicit function to regress the surface points; <b style="color:#8899e5">(4.1)</b>  A <b>Surfel Splatting network (SPNet)</b> is proposed to parameterize the radiance field as Gaussian Surfels via learning a Gaussian implicit function; and <b style="color:#8899e5">(4.2)</b> the splatting outputs are further enhanced by an <b>Appearance Blending</b> scheme to render novel-view images in <b style="color:#8899e5">1K resolution</b>. Geo., Col., visi., Feat., vec., len., rot., cam., Func., Res. are abbreviations for Geometric, Colorimetric, visibility, Feature, vector, length, rotation, camera, Function, and Resolution, respectively.
+            </p>
+            <div style="margin-top:-20px;">
+              <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+                  <source src="assets/video_demo.mp4" type="video/mp4">
+              </video>
+            </div>
+            <h6 style="color:#8899a5; margin-top:-25px;" >The operation flow of our rendering system. The inputs are 4-view RGBD images.</h6>
+
+          </div>
+        </div>
+
+      </div>
+  </section>
+  <br>
+
+  <!-- overview video -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <h3><b>Overview Video</b></h3>
+            <hr style="margin-top:0px">
+            <h5 style="margin-top:30px;"><b>Part 1: </b>Demo Video</h5>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe style="clip-path: inset(1px 1px)" width="90%" height="90%" src="https://www.youtube.com/embed/MGIlBT_JZNk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+            </div>
+
+            <h5 style="margin-top:30px;"><b>Part 2: </b>Fast Forward Video (with audio)</h5>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe style="clip-path: inset(1px 1px)" width="90%" height="90%" src="https://www.youtube.com/embed/M4fD3GgjZTI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3 style="margin-top:20px;"><b>Comparison Results</b></h3>
+          <hr style="margin-top:0px">
+          <!-- <img src="assets/sailor_depth_denoising.png" width="85%" alt=""/> -->
+          <!-- <p style="margin-top:15px;"> Fig 2.&nbsp; <b>(1) <i>Depth Denoising Module</i></b>. Visualization of our depth denoising results on our real captured RGBD images. -->
+          <!-- </p> -->
+          <!-- <div style="margin-top:15px;">
+            <video width="85%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+                <source src="assets/sailor_static.mp4" type="video/mp4">
+            </video>
+          </div>
+          <p style="margin-top:8px;"> Fig 3.&nbsp; <b>Static</b> 3D human reconstruction and free-view rendering results using four RGBD images.</p>
+          <div style="margin-top:15px;">
+            <video width="85%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+                <source src="assets/sailor_dynamic.mp4" type="video/mp4">
+            </video>
+          </div>
+          <p style="margin-top:8px;"> Fig 4.&nbsp; <b>Dynamic</b> human free-view rendering results and bullet-time effects from four-view RGBD videos.</p>
+          <div style="margin-top:18px;">
+            <img src="assets/sailor_comparison.png" width="85%" alt=""/>
+          </div>
+          <p style="margin-top:8px;"> Fig 5.&nbsp; Visualization of <b>rendering comparisons</b> on our real-captured dataset (row 1-5) and the THuman2.0 dataset (row 6).</p> -->
+          <div style="margin-top:18px;">
+            <img src="assets/comparisons_thuman.png" width="85%" alt=""/>
+          </div>
+          <p style="margin-top:8px;"> Fig 2.&nbsp; Visualization of the <b>rendering comparisons</b> on the THuman2.0 [CVPR21] dataset, between ours and seven existing methods.</p>
+          <div style="margin-top:18px;">
+            <img src="assets/comparison_real.png" width="85%" alt=""/>
+          </div>
+          <p style="margin-top:8px;"> Fig 3.&nbsp; Visualization of the <b>rendering comparisons</b> on the SAILOR [SA23] dataset, between ours and five existing methods.</p>
+          <div style="margin-top:15px;">
+            <video width="90%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+                <source src="assets/geo_color.mp4" type="video/mp4">
+            </video>
+          </div>
+          <p style="margin-top:8px;">Comparisons between ours and Function4D [CVPR21], SAILOR [SA23], on the geometric (3D mesh / surface points) and rendering results.</p>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h4><b>Live Rendering</b></h4>
+          <hr style="margin-top:0px">
+          <div style="margin-top:15px;">
+            <video width="90%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+                <source src="assets/live_rendering.mp4" type="video/mp4">
+            </video>
+          </div>
+          <p style="margin-top:8px;">Interactive / live rendering results are obtained from 4-RGBD Streams using a PC containing one Nvidia RTX 3090 GPU card.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- citing -->
+  <div class="container">
+    <div class="row ">
+      <div class="col-12 text-center">
+          <h4><b>Citation</b></h4>
+          <hr style="margin-top:0px">
+              <pre class="text-left" style="background-color: #e9eeef;padding: 1.25em 1.5em">
+<code>@article{dong2024gaussian,
+  title={Gaussian Surfel Splatting for Live Human Performance Capture},
+  author={Dong, Zheng and Xu, Ke and Gao, Yaoan and Bao, Hujun and Xu, Weiwei and Lau, Rynson WH},
+  journal={ACM Transactions on Graphics (TOG)},
+  volume={43},
+  number={6},
+  pages={1--17},
+  year={2024},
+  publisher={ACM New York, NY, USA}
+}
+</code></pre>
+          <hr>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
