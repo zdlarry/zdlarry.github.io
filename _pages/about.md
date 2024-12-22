@@ -94,6 +94,7 @@ Annual Conference on Neural Information Processing Systems (**NeurIPS**) 2022 (<
 <b>Zheng Dong</b>, Ke Xu, Yin Yang, Hujun Bao, Weiwei Xu, Rynson W.H. Lau<br>
 International Conference on Computer Vision (**ICCV**) 2021<br>
 [<i class="fas fa-fw fa-file-pdf"></i>Paper](./files/papers/larr.pdf) /
+[<i class="fas fa-fw fa-file-pdf"></i>Supp.](./files/papers/larr_supp.pdf) /
 [<i class="fas fa-fw fa-video"></i>Video](https://www.youtube.com/watch?v=O5F20FLRrsw) /
 [<i class="fab fa-fw fa-github"></i>Github](https://github.com/zdlarr/Location-aware-SIRR)<br>
 *LARR leverages the Laplacian features to regress probabilistic reflection conﬁdence maps, and incorporates a recurrent network to refine reflection removal results at each iteration.*
