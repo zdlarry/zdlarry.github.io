@@ -19,13 +19,19 @@ redirect_from:
 
 ## About Me
 
-Hi, this is Zheng Dong. I am a 5th-year (2019~) Ph.D. student in the State Key Laboratory of CAD&CG, Zhejiang University, advised by Prof. [Weiwei Xu](http://www.cad.zju.edu.cn/home/weiweixu/weiweixu_en.htm) and Prof. [Rynson W.H. Lau](https://www.cs.cityu.edu.hk/~rynson/) (City University of Hong Kong). My research focuses on **human-centric 3D vision** and **2D image processing**, including image-based 3D human reconstruction, human volumetric capture, 2D image reflection removal, etc.
+This is Zheng Dong. I am a 5th-year (2019~) Ph.D. student in the State Key Laboratory of CAD&CG, Zhejiang University, advised by Prof. [Weiwei Xu](http://www.cad.zju.edu.cn/home/weiweixu/weiweixu_en.htm) and Prof. [Rynson W.H. Lau](https://www.cs.cityu.edu.hk/~rynson/) (City University of Hong Kong). My research focuses on **human-centric 3D vision** and **2D image processing**, including image-based 3D human reconstruction, human volumetric capture, 2D image reflection removal, etc.
 
 **E-mail**: zhengdong AT zju.edu.cn
 
 **WeChat**: -zhengdong-
 
 **Resume**: [[resume.pdf]](./files/resume.pdf)
+
+<span class='anchor' id='academic-service'></span>
+
+## Academic Service
+
+**Reviewer**: SIGGRAPH, CVPR, ICCV, NeurIPS, IJCV, TVCG, CAVW, etc
 
 <span class='anchor' id='background' style="padding-top:10px"></span>
 
@@ -35,7 +41,7 @@ Hi, this is Zheng Dong. I am a 5th-year (2019~) Ph.D. student in the State Key L
 
 **Ph.D. Student. Sep. 2019 - Jun. 2024 (Expected)**<br>
 [State Key Laboratory of CAD&CG](http://www.cad.zju.edu.cn/index.html)<br>
-[Zhejiang University](http://www.zju.edu.cn)<br>
+[Zhejiang University（浙江大学）](http://www.zju.edu.cn)<br>
 
 ---
 
@@ -43,7 +49,7 @@ Hi, this is Zheng Dong. I am a 5th-year (2019~) Ph.D. student in the State Key L
 
 **Bachelor of Computer Science. Sep. 2015 - Jun. 2019**<br>
 [School of Computer Science and Engineering](https://cse.csu.edu.cn/index.htm)<br>
-[Central South University](https://www.csu.edu.cn/)<br>
+[Central South University（中南大学）](https://www.csu.edu.cn/)<br>
 
 <span class='anchor' id='publications' style="padding-top:5px"></span>
 
@@ -103,15 +109,11 @@ International Conference on Computer Vision (**ICCV**) 2021<br>
 
 ## Distinctions
 
-Excellent Postgraduate Student Award, Zhejiang University (**2020, 2022-2023**)
+Outstanding Graduate Student，Zhejiang University (**2025**)，浙江大学优秀毕业生
 
-Outstanding Graduate Student, Central South University (**2019**)
+Excellent Postgraduate Student Award, Zhejiang University (**2020, 2022-2023**)，浙江大学优秀研究生
 
-National Scholarship, Central South University (**2016**)
+Outstanding Graduate Student, Central South University (**2019**)，中南大学优秀毕业生
 
-<span class='anchor' id='academic-service'></span>
-
-## Academic Service
-
-**Reviewer**: IJCV, NeurIPS, CVPR, CAVW, etc
+National Scholarship, Central South University (**2016**), 国家奖学金
 
