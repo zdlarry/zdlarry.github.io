@@ -41,7 +41,7 @@ This is Zheng Dong. I am a 5th-year (2019~) Ph.D. student in the State Key Labor
 
 **Ph.D. Student. Sep. 2019 - Jun. 2024 (Expected)**<br>
 [State Key Laboratory of CAD&CG](http://www.cad.zju.edu.cn/index.html)<br>
-[Zhejiang University（浙江大学）](http://www.zju.edu.cn)<br>
+[Zhejiang University (浙江大学)](http://www.zju.edu.cn)<br>
 
 ---
 
@@ -49,7 +49,7 @@ This is Zheng Dong. I am a 5th-year (2019~) Ph.D. student in the State Key Labor
 
 **Bachelor of Computer Science. Sep. 2015 - Jun. 2019**<br>
 [School of Computer Science and Engineering](https://cse.csu.edu.cn/index.htm)<br>
-[Central South University（中南大学）](https://www.csu.edu.cn/)<br>
+[Central South University (中南大学)](https://www.csu.edu.cn/)<br>
 
 <span class='anchor' id='publications' style="padding-top:5px"></span>
 
@@ -115,5 +115,7 @@ Excellent Postgraduate Student Award, Zhejiang University (**2020, 2022-2023**)�
 
 Outstanding Graduate Student, Central South University (**2019**)，中南大学优秀毕业生
 
-National Scholarship, Central South University (**2016**), 国家奖学金
+National Scholarship, Central South University (**2016**)，国家奖学金
+
+<br />
 
