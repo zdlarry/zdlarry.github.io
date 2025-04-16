@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Zheng Dong (董政)"
-description              : "Ph.D. Degree from Zhejiang University"
+description              : "Ph.D. Degree from ZJU / Research Fellow at ZSTU"
 repository               : "zdlarry/zdlarry.github.io"
 google_scholar_stats_use_cdn : false
 
@@ -23,7 +23,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Zheng Dong (董政)"
   avatar           : "files/dz_page5.jpg"
-  bio              : "Zhejiang University"
+  bio              : "Zhejiang Sci-Tech University"
   location         : "Hangzhou, China"
   employer         :
   pubmed           : 
