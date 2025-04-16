@@ -17,9 +17,9 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-## About Me
+## Brief Intro.
 
-This is Zheng Dong. I am a 5th-year (2019~) Ph.D. student in the State Key Laboratory of CAD&CG, Zhejiang University, advised by Prof. [Weiwei Xu](http://www.cad.zju.edu.cn/home/weiweixu/weiweixu_en.htm) and Prof. [Rynson W.H. Lau](https://www.cs.cityu.edu.hk/~rynson/) (City University of Hong Kong). My research focuses on **human-centric 3D vision** and **2D image processing**, including image-based 3D human reconstruction, human volumetric capture, 2D image reflection removal, etc.
+Zheng Dong is currently a research fellow (特聘研究员) at Zhejiang Sci-Tech University. He received his Ph.D. Degree in computer vision and graphics from the State Key Laboratory of CAD&CG, Zhejiang University, under the supervision of Prof. [Weiwei Xu](http://www.cad.zju.edu.cn/home/weiweixu/weiweixu_en.htm) (Zhejiang University) and Prof. [Rynson W.H. Lau](https://www.cs.cityu.edu.hk/~rynson/) (City University of Hong Kong). His research interests lie in **human-centric 3D/4D vision** and **2D image processing**, with a focus on image-based 3D human reconstruction, dynamic human-scene modeling, and reflection/flare removal in 2D images, among others.
 
 **E-mail**: zhengdong AT zju.edu.cn
 
@@ -37,9 +37,17 @@ This is Zheng Dong. I am a 5th-year (2019~) Ph.D. student in the State Key Labor
 
 ## Background
 
+<img align="left" width="90" height="90" src="./images/zstu-logo.png" style="padding-right:20px; padding-top:0px"/>
+
+**Researcher | Apr. 2025 - Present**<br>
+[School of Artificial Intelligence](https://scst.zstu.edu.cn/)<br>
+[Zhejiang Sci-Tech University (浙江理工大学)](https://www.zstu.edu.cn/)<br>
+
+---
+
 <img align="left" width="90" height="90" src="./images/zju-logo.png" style="padding-right:20px; padding-top:0px"/>
 
-**Ph.D. Student. Sep. 2019 - Jun. 2024 (Expected)**<br>
+**Ph.D. Degree in Computer Vision and Graphics | Sep. 2019 - Mar. 2025**<br>
 [State Key Laboratory of CAD&CG](http://www.cad.zju.edu.cn/index.html)<br>
 [Zhejiang University (浙江大学)](http://www.zju.edu.cn)<br>
 
@@ -47,7 +55,7 @@ This is Zheng Dong. I am a 5th-year (2019~) Ph.D. student in the State Key Labor
 
 <img align="left" width="90" height="90" src="./images/csu-logo.png" style="padding-right:20px; padding-top:0px"/>
 
-**Bachelor of Computer Science. Sep. 2015 - Jun. 2019**<br>
+**Bachelor of Computer Science | Sep. 2015 - Jun. 2019**<br>
 [School of Computer Science and Engineering](https://cse.csu.edu.cn/index.htm)<br>
 [Central South University (中南大学)](https://www.csu.edu.cn/)<br>
 
