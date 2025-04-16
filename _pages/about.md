@@ -37,7 +37,7 @@ Zheng Dong is currently a research fellow (特聘研究员) at Zhejiang Sci-Tech
 
 ## Background
 
-<img align="left" width="90" height="90" src="./images/zstu-logo.png" style="padding-right:20px; padding-top:0px"/>
+<img align="left" width="86" height="86" src="./images/zstu-logo.png" style="padding-right:20px; padding-top:0px"/>
 
 **Researcher | Apr. 2025 - Present**<br>
 [School of Artificial Intelligence](https://scst.zstu.edu.cn/)<br>
