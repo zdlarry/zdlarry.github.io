@@ -19,7 +19,7 @@ redirect_from:
 
 ## Brief Intro.
 
-Zheng Dong is currently a **research fellow** (特聘研究员) at Zhejiang Sci-Tech University. He received his Ph.D. Degree in computer vision and graphics from the **State Key Laboratory of CAD&CG, Zhejiang University**, under the supervision of Prof. [Weiwei Xu](http://www.cad.zju.edu.cn/home/weiweixu/weiweixu_en.htm) (Zhejiang University) and Prof. [Rynson W.H. Lau](https://www.cs.cityu.edu.hk/~rynson/) (City University of Hong Kong). His research interests lie in **human-centric 3D/4D vision** and **2D image processing**, with a focus on image-based 3D human reconstruction, dynamic human-scene modeling, and reflection/flare removal in 2D images, among others.
+Zheng Dong is currently a **research fellow** (特聘研究员) at **Zhejiang Sci-Tech University**. He received his Ph.D. Degree in computer vision and graphics from the **State Key Laboratory of CAD&CG, Zhejiang University**, under the supervision of Prof. [Weiwei Xu](http://www.cad.zju.edu.cn/home/weiweixu/weiweixu_en.htm) (Zhejiang University) and Prof. [Rynson W.H. Lau](https://www.cs.cityu.edu.hk/~rynson/) (City University of Hong Kong). His research interests lie in **human-centric 3D/4D vision** and **2D image processing**, with a focus on image-based 3D human reconstruction, dynamic human-scene modeling, and reflection/flare removal in 2D images, among others.
 
 **E-mail**: zhengdong AT zstu.edu.cn / zju.edu.cn
 
