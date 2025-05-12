@@ -59,9 +59,10 @@ Zheng Dong is currently a **research fellow** (特聘研究员) at **Zhejiang Sc
 [School of Computer Science and Engineering](https://cse.csu.edu.cn/index.htm)<br>
 [Central South University (中南大学)](https://www.csu.edu.cn/)<br>
 
-<span class='anchor' id='publications' style="padding-top:10px"></span>
+<span class='anchor' id='publications' style="padding-top:15px"></span>
 
 ## Publications 
+<br>
 
 <img align="left" width="320" height="160" src="./images/papers/sig25_4dgv.png" style="padding-right:20px; padding-top:0px"/>
 
@@ -73,6 +74,7 @@ ACM Trans. on Graphics, (Proc. ACM <b>SIGGRAPH</b> 2025)<br>
 <i class="fas fa-fw fa-video"></i>Video /
 <i class="fab fa-fw fa-github"></i>Github<br>
 *Proposed a 4D-scene reconstruction method, which supports streaming based on the group of Gaussian (GOG) representation and online playback of reconstructed volumetric video.*
+<br>
 
 ---
 
@@ -104,7 +106,7 @@ ACM Trans. on Graphics, 42(6), (Proc. ACM <b>SIGGRAPH Asia</b> 2023)<br>
 
 ---
 
-<img align="left" width="320" height="160" src="./images/papers/nips22-gtpifu.png" style="padding-right:20px; padding-top:5px"/>
+<img align="left" width="320" height="160" src="./images/papers/nips22-gtpifu.png" style="padding-right:20px; padding-top:0px"/>
 
 <b>Geometry-aware Two-scale PIFu Representation for Human Reconstruction</b><br>
 <b>Zheng Dong</b>, Ke Xu, Ziheng Duan, Hujun Bao, Weiwei Xu<sup>†</sup>, Rynson W.H. Lau<br>
@@ -118,7 +120,7 @@ Annual Conference on Neural Information Processing Systems (**NeurIPS**) 2022 (<
 
 ---
 
-<img align="left" width="320" height="160" src="./images/papers/iccv21-larr.png" style="padding-right:20px; padding-top:5px"/>
+<img align="left" width="320" height="160" src="./images/papers/iccv21-larr.png" style="padding-right:20px; padding-top:0px"/>
 
 <b>Location-aware Single Image Reflection Removal</b><br>
 <b>Zheng Dong</b>, Ke Xu, Yin Yang, Hujun Bao, Weiwei Xu<sup>†</sup>, Rynson W.H. Lau<br>
