@@ -59,10 +59,9 @@ Zheng Dong is currently a **research fellow** (特聘研究员) at **Zhejiang Sc
 [School of Computer Science and Engineering](https://cse.csu.edu.cn/index.htm)<br>
 [Central South University (中南大学)](https://www.csu.edu.cn/)<br>
 
-<span class='anchor' id='publications' style="padding-top:15px"></span>
+<span class='anchor' id='publications' style="padding-top:20px"></span>
 
 ## Publications 
-<br>
 
 <img align="left" width="320" height="160" src="./images/papers/sig25_4dgv.png" style="padding-right:20px; padding-top:0px"/>
 
@@ -101,7 +100,7 @@ ACM Trans. on Graphics, 42(6), (Proc. ACM <b>SIGGRAPH Asia</b> 2023)<br>
 [<i class="fas fa-fw fa-file-pdf"></i>Paper](./files/papers/sailor.pdf) /
 [<i class="fas fa-fw fa-video"></i>Video](https://www.youtube.com/watch?v=88tX22Z0Dz0) /
 [<i class="fab fa-fw fa-github"></i>Github](https://github.com/zdlarr/SAILOR)<br>
-*SAILOR is a generalizable method for human free-view rendering and reconstruction from very sparse (*e.g.*, 4) RGBD streams, achieving near real-time performance under acceleration.*
+*SAILOR is a generalizable approach for human free-viewpoint rendering and reconstruction from extremely sparse (e.g., 4-view) RGBD streams, achieving near real-time performance under the CUDA acceleration.*
 <br>
 
 ---
