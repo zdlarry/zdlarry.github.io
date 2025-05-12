@@ -61,9 +61,11 @@ Zheng Dong is currently a **research fellow** (特聘研究员) at **Zhejiang Sc
 
 <span class='anchor' id='publications' style="padding-top:20px"></span>
 
-&nbsp;
+<div style="margin-top: 10px;"></div>
+
 ## Publications
-&nbsp;
+
+<div style="margin-top: 10px;"></div>
 
 <img align="left" width="320" height="160" src="./images/papers/sig25_4dgv.png" style="padding-right:20px; padding-top:0px"/>
 
