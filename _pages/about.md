@@ -137,7 +137,7 @@ International Conference on Computer Vision (**ICCV**) 2021<br>
 
 <span class='anchor' id='distinctions'></span>
 
-<div style="margin-top: 5px;"></div>
+<div style="margin-top: 10px;"></div>
 
 ## Distinctions
 
