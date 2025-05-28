@@ -69,10 +69,10 @@ Zheng Dong is currently a **research fellow** (特聘研究员) at **Zhejiang Sc
 
 <img align="left" width="320" height="160" src="./images/papers/sig25_4dgv.png" style="padding-right:20px; padding-top:0px"/>
 
-<b>4D Gaussian Video with Motion Layering</b><br>
+<b>4D Gaussian Videos with Motion Layering</b><br>
 Pinxuan Dai\*, Peiquan Zhang\*, <b>Zheng Dong</b>, Ke Xu, Yifan Peng, Dandan Ding, Yujun Shen, Yin Yang, Xinguo Liu, Rynson W.H. Lau, Weiwei Xu<sup>†</sup><br>
 ACM Trans. on Graphics, 44(4), (Proc. ACM <b>SIGGRAPH</b> 2025)<br>
-<i class="fas fa-fw fa-globe"></i>Project /
+[<i class="fas fa-fw fa-globe"></i>Project](https://turandai.github.io/projects/4d_gaussian_video/) /
 <i class="fas fa-fw fa-file-pdf"></i>Paper /
 <i class="fas fa-fw fa-video"></i>Video /
 <i class="fab fa-fw fa-github"></i>Github<br>
