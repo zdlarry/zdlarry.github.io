@@ -67,6 +67,20 @@ Zheng Dong is currently a **research fellow** (特聘研究员) at **Zhejiang Sc
 
 <div style="margin-top: 20px;"></div>
 
+<img align="left" width="320" height="160" src="./images/papers/siga25_LTC.png" style="padding-right:20px; padding-top:0px"/>
+
+<b>Efficient Object Reconstruction with Differentiable Area Light Shading</b><br>
+Yaoan Gao, Jiamin Xu, James Tompkin, Qi Wang, <b>Zheng Dong</b>, Hujun Bao, Yujun Shen, Huamin Wang, Changqing Zou, Weiwei Xu<sup>†</sup><br>
+Proc. ACM <b>SIGGRAPH Asia</b> 2025<br>
+<i class="fas fa-fw fa-globe"></i>Project /
+<i class="fas fa-fw fa-file-pdf"></i>Paper /
+<i class="fas fa-fw fa-video"></i>Video /
+<i class="fab fa-fw fa-github"></i>Github<br>
+*Active area lighting combined with LTC acceleration enables more accurate and efficient material reconstruction, reducing photo requirements and improving relighting quality.*
+<br>
+
+---
+
 <img align="left" width="320" height="160" src="./images/papers/sig25_4dgv.png" style="padding-right:20px; padding-top:0px"/>
 
 <b>4D Gaussian Videos with Motion Layering</b><br>
