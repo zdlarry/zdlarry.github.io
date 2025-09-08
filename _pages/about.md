@@ -67,7 +67,7 @@ Zheng Dong is currently a **research fellow** (特聘研究员) at **Zhejiang Sc
 
 <div style="margin-top: 20px;"></div>
 
-<img align="left" width="320" height="160" src="./images/papers/siga25_LTC.png" style="padding-right:20px; padding-top:10px"/>
+<img align="left" width="320" height="160" src="./images/papers/siga25_LTC.png" style="padding-right:20px; padding-top:0px"/>
 
 <b>Efficient Object Reconstruction with Differentiable Area Light Shading</b><br>
 Yaoan Gao, Jiamin Xu, James Tompkin, Qi Wang, <b>Zheng Dong</b>, Hujun Bao, Yujun Shen, Huamin Wang, Changqing Zou, Weiwei Xu<sup>†</sup><br>
@@ -79,9 +79,13 @@ Proc. ACM <b>SIGGRAPH Asia</b> 2025<br>
 *Active area lighting combined with LTC acceleration enables more accurate and efficient material reconstruction, reducing photo requirements and improving relighting quality.*
 <br>
 
+<div style="margin-top: 5px;"></div>
+
 ---
 
-<img align="left" width="320" height="160" src="./images/papers/sig25_4dgv.png" style="padding-right:20px; padding-top:10px"/>
+<div style="margin-top: 5px;"></div>
+
+<img align="left" width="320" height="160" src="./images/papers/sig25_4dgv.png" style="padding-right:20px; padding-top:0px"/>
 
 <b>4D Gaussian Videos with Motion Layering</b><br>
 Pinxuan Dai\*, Peiquan Zhang\*, <b>Zheng Dong</b>, Ke Xu, Yifan Peng, Dandan Ding, Yujun Shen, Yin Yang, Xinguo Liu, Rynson W.H. Lau, Weiwei Xu<sup>†</sup><br>
@@ -93,9 +97,13 @@ ACM Trans. on Graphics, 44(4), (Proc. ACM <b>SIGGRAPH</b> 2025)<br>
 *Proposed a 4D-scene reconstruction method, which supports streaming based on the group of Gaussian (GOG) representation and online playback of reconstructed volumetric video.*
 <br>
 
+<div style="margin-top: 5px;"></div>
+
 ---
 
-<img align="left" width="320" height="160" src="./images/papers/siga24.png" style="padding-right:20px; padding-top:10px"/>
+<div style="margin-top: 5px;"></div>
+
+<img align="left" width="320" height="160" src="./images/papers/siga24.png" style="padding-right:20px; padding-top:0px"/>
 
 <b>Gaussian Surfel Splatting for Live Human Performance Capture</b><br>
 <b>Zheng Dong</b>, Ke Xu, Yaoan Gao, Hujun Bao, Weiwei Xu<sup>†</sup>, Rynson W.H. Lau<br>
@@ -107,9 +115,13 @@ ACM Trans. on Graphics, 43(6), (Proc. ACM <b>SIGGRAPH Asia</b> 2024)<br>
 *We propose a novel regressed-surface-point-based method, to leverage Gaussian surfel splatting and blending-based appearance enhancement, for human live free-view rendering from 4 RGBD sensors.*
 <br>
 
+<div style="margin-top: 5px;"></div>
+
 ---
 
-<img align="left" width="320" height="160" src="./images/papers/siga23-sailor.png" style="padding-right:20px; padding-top:10px"/>
+<div style="margin-top: 5px;"></div>
+
+<img align="left" width="320" height="160" src="./images/papers/siga23-sailor.png" style="padding-right:20px; padding-top:0px"/>
 
 <b>SAILOR: Synergizing Radiance and Occupancy Fields for Live Human Performance Capture</b><br>
 <b>Zheng Dong</b>, Ke Xu, Yaoan Gao, Qilin Sun, Hujun Bao, Weiwei Xu<sup>†</sup>, Rynson W.H. Lau<br>
@@ -121,9 +133,13 @@ ACM Trans. on Graphics, 42(6), (Proc. ACM <b>SIGGRAPH Asia</b> 2023)<br>
 *SAILOR is a generalizable approach for human free-viewpoint rendering and reconstruction from extremely sparse (e.g., 4-view) RGBD streams, achieving near real-time performance under the CUDA acceleration.*
 <br>
 
+<div style="margin-top: 5px;"></div>
+
 ---
 
-<img align="left" width="320" height="160" src="./images/papers/nips22-gtpifu.png" style="padding-right:20px; padding-top:10px"/>
+<div style="margin-top: 5px;"></div>
+
+<img align="left" width="320" height="160" src="./images/papers/nips22-gtpifu.png" style="padding-right:20px; padding-top:0px"/>
 
 <b>Geometry-aware Two-scale PIFu Representation for Human Reconstruction</b><br>
 <b>Zheng Dong</b>, Ke Xu, Ziheng Duan, Hujun Bao, Weiwei Xu<sup>†</sup>, Rynson W.H. Lau<br>
@@ -135,9 +151,13 @@ Annual Conference on Neural Information Processing Systems (**NeurIPS**) 2022 (<
 *The geometry-aware two-scale PIFu is a method to address the problem of PIFu-based approaches that reconstruct flat facial and geometry-fallible bodies in a sparse capture setting.*
 <br>
 
+<div style="margin-top: 5px;"></div>
+
 ---
 
-<img align="left" width="320" height="160" src="./images/papers/iccv21-larr.png" style="padding-right:20px; padding-top:10px"/>
+<div style="margin-top: 5px;"></div>
+
+<img align="left" width="320" height="160" src="./images/papers/iccv21-larr.png" style="padding-right:20px; padding-top:0px"/>
 
 <b>Location-aware Single Image Reflection Removal</b><br>
 <b>Zheng Dong</b>, Ke Xu, Yin Yang, Hujun Bao, Weiwei Xu<sup>†</sup>, Rynson W.H. Lau<br>
