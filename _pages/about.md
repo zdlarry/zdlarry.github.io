@@ -79,11 +79,11 @@ Proc. ACM <b>SIGGRAPH Asia</b> 2025<br>
 *Active area lighting combined with LTC acceleration enables more accurate and efficient material reconstruction, reducing photo requirements and improving relighting quality.*
 <br>
 
-<div style="margin-top: 5px;"></div>
+<div style="margin-top: 7px;"></div>
 
 ---
 
-<div style="margin-top: 5px;"></div>
+<div style="margin-top: 7px;"></div>
 
 <img align="left" width="320" height="160" src="./images/papers/sig25_4dgv.png" style="padding-right:20px; padding-top:0px"/>
 
@@ -97,11 +97,11 @@ ACM Trans. on Graphics, 44(4), (Proc. ACM <b>SIGGRAPH</b> 2025)<br>
 *Proposed a 4D-scene reconstruction method, which supports streaming based on the group of Gaussian (GOG) representation and online playback of reconstructed volumetric video.*
 <br>
 
-<div style="margin-top: 5px;"></div>
+<div style="margin-top: 7px;"></div>
 
 ---
 
-<div style="margin-top: 5px;"></div>
+<div style="margin-top: 7px;"></div>
 
 <img align="left" width="320" height="160" src="./images/papers/siga24.png" style="padding-right:20px; padding-top:0px"/>
 
@@ -115,11 +115,11 @@ ACM Trans. on Graphics, 43(6), (Proc. ACM <b>SIGGRAPH Asia</b> 2024)<br>
 *We propose a novel regressed-surface-point-based method, to leverage Gaussian surfel splatting and blending-based appearance enhancement, for human live free-view rendering from 4 RGBD sensors.*
 <br>
 
-<div style="margin-top: 5px;"></div>
+<div style="margin-top: 7px;"></div>
 
 ---
 
-<div style="margin-top: 5px;"></div>
+<div style="margin-top: 7px;"></div>
 
 <img align="left" width="320" height="160" src="./images/papers/siga23-sailor.png" style="padding-right:20px; padding-top:0px"/>
 
@@ -133,11 +133,11 @@ ACM Trans. on Graphics, 42(6), (Proc. ACM <b>SIGGRAPH Asia</b> 2023)<br>
 *SAILOR is a generalizable approach for human free-viewpoint rendering and reconstruction from extremely sparse (e.g., 4-view) RGBD streams, achieving near real-time performance under the CUDA acceleration.*
 <br>
 
-<div style="margin-top: 5px;"></div>
+<div style="margin-top: 7px;"></div>
 
 ---
 
-<div style="margin-top: 5px;"></div>
+<div style="margin-top: 7px;"></div>
 
 <img align="left" width="320" height="160" src="./images/papers/nips22-gtpifu.png" style="padding-right:20px; padding-top:0px"/>
 
@@ -151,11 +151,11 @@ Annual Conference on Neural Information Processing Systems (**NeurIPS**) 2022 (<
 *The geometry-aware two-scale PIFu is a method to address the problem of PIFu-based approaches that reconstruct flat facial and geometry-fallible bodies in a sparse capture setting.*
 <br>
 
-<div style="margin-top: 5px;"></div>
+<div style="margin-top: 7px;"></div>
 
 ---
 
-<div style="margin-top: 5px;"></div>
+<div style="margin-top: 7px;"></div>
 
 <img align="left" width="320" height="160" src="./images/papers/iccv21-larr.png" style="padding-right:20px; padding-top:0px"/>
 
