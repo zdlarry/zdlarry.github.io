@@ -67,7 +67,7 @@ Zheng Dong is currently a **research fellow** (特聘研究员) at **Zhejiang Sc
 
 <div style="margin-top: 20px;"></div>
 
-<img align="left" width="320" height="160" src="./images/papers/siga25_LTC.png" style="padding-right:20px; padding-top:0px"/>
+<img align="left" width="320" height="160" src="./images/papers/siga25_LTC.png" style="padding-right:20px; padding-top:10px"/>
 
 <b>Efficient Object Reconstruction with Differentiable Area Light Shading</b><br>
 Yaoan Gao, Jiamin Xu, James Tompkin, Qi Wang, <b>Zheng Dong</b>, Hujun Bao, Yujun Shen, Huamin Wang, Changqing Zou, Weiwei Xu<sup>†</sup><br>
@@ -81,7 +81,7 @@ Proc. ACM <b>SIGGRAPH Asia</b> 2025<br>
 
 ---
 
-<img align="left" width="320" height="160" src="./images/papers/sig25_4dgv.png" style="padding-right:20px; padding-top:0px"/>
+<img align="left" width="320" height="160" src="./images/papers/sig25_4dgv.png" style="padding-right:20px; padding-top:10px"/>
 
 <b>4D Gaussian Videos with Motion Layering</b><br>
 Pinxuan Dai\*, Peiquan Zhang\*, <b>Zheng Dong</b>, Ke Xu, Yifan Peng, Dandan Ding, Yujun Shen, Yin Yang, Xinguo Liu, Rynson W.H. Lau, Weiwei Xu<sup>†</sup><br>
@@ -95,7 +95,7 @@ ACM Trans. on Graphics, 44(4), (Proc. ACM <b>SIGGRAPH</b> 2025)<br>
 
 ---
 
-<img align="left" width="320" height="160" src="./images/papers/siga24.png" style="padding-right:20px; padding-top:0px"/>
+<img align="left" width="320" height="160" src="./images/papers/siga24.png" style="padding-right:20px; padding-top:10px"/>
 
 <b>Gaussian Surfel Splatting for Live Human Performance Capture</b><br>
 <b>Zheng Dong</b>, Ke Xu, Yaoan Gao, Hujun Bao, Weiwei Xu<sup>†</sup>, Rynson W.H. Lau<br>
@@ -109,7 +109,7 @@ ACM Trans. on Graphics, 43(6), (Proc. ACM <b>SIGGRAPH Asia</b> 2024)<br>
 
 ---
 
-<img align="left" width="320" height="160" src="./images/papers/siga23-sailor.png" style="padding-right:20px; padding-top:0px"/>
+<img align="left" width="320" height="160" src="./images/papers/siga23-sailor.png" style="padding-right:20px; padding-top:10px"/>
 
 <b>SAILOR: Synergizing Radiance and Occupancy Fields for Live Human Performance Capture</b><br>
 <b>Zheng Dong</b>, Ke Xu, Yaoan Gao, Qilin Sun, Hujun Bao, Weiwei Xu<sup>†</sup>, Rynson W.H. Lau<br>
@@ -123,7 +123,7 @@ ACM Trans. on Graphics, 42(6), (Proc. ACM <b>SIGGRAPH Asia</b> 2023)<br>
 
 ---
 
-<img align="left" width="320" height="160" src="./images/papers/nips22-gtpifu.png" style="padding-right:20px; padding-top:0px"/>
+<img align="left" width="320" height="160" src="./images/papers/nips22-gtpifu.png" style="padding-right:20px; padding-top:10px"/>
 
 <b>Geometry-aware Two-scale PIFu Representation for Human Reconstruction</b><br>
 <b>Zheng Dong</b>, Ke Xu, Ziheng Duan, Hujun Bao, Weiwei Xu<sup>†</sup>, Rynson W.H. Lau<br>
@@ -137,7 +137,7 @@ Annual Conference on Neural Information Processing Systems (**NeurIPS**) 2022 (<
 
 ---
 
-<img align="left" width="320" height="160" src="./images/papers/iccv21-larr.png" style="padding-right:20px; padding-top:0px"/>
+<img align="left" width="320" height="160" src="./images/papers/iccv21-larr.png" style="padding-right:20px; padding-top:10px"/>
 
 <b>Location-aware Single Image Reflection Removal</b><br>
 <b>Zheng Dong</b>, Ke Xu, Yin Yang, Hujun Bao, Weiwei Xu<sup>†</sup>, Rynson W.H. Lau<br>
