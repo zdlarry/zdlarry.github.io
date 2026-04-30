@@ -67,6 +67,24 @@ Zheng Dong is currently a **research fellow** (特聘研究员) at **Zhejiang Sc
 
 <div style="margin-top: 20px;"></div>
 
+<img align="left" width="320" height="160" src="./images/papers/icml26_turboGS.png" style="padding-right:20px; padding-top:0px"/>
+
+<b>TurboGS: Accelerating 3D Gaussian Splatting via Error-Guided Sparse Pixel Sampling and Optimization</b><br>
+<b>Zheng Dong</b>, Daifei Qiu, Pinxuan Dai, Ke Xu, Jiamin Xu, Lili He, Rynson W.H. Lau, Weiwei Xu<sup>†</sup><br>
+International Conference on Machine Learning (**ICML**) 2026<br>
+<i class="fas fa-fw fa-globe"></i>Project /
+<i class="fas fa-fw fa-file-pdf"></i>Paper /
+<i class="fas fa-fw fa-video"></i>Video /
+<i class="fab fa-fw fa-github"></i>Github<br>
+*TurboGS speeds up 3DGS via error-guided sparse pixel optimization and error-driven density control, delivering up to 10x faster training than 3DGS with comparable rendering quality.*
+<br>
+
+<div style="margin-top: 7px;"></div>
+
+---
+
+<div style="margin-top: 20px;"></div>
+
 <img align="left" width="320" height="160" src="./images/papers/siga25_LTC.png" style="padding-right:20px; padding-top:0px"/>
 
 <b>Efficient Object Reconstruction with Differentiable Area Light Shading</b><br>
