@@ -72,9 +72,9 @@ Zheng Dong is currently a **research fellow** (特聘研究员) at **Zhejiang Sc
 <b>TurboGS: Accelerating 3D Gaussian Splatting via Error-Guided Sparse Pixel Sampling and Optimization</b><br>
 <b>Zheng Dong</b>, Daifei Qiu, Pinxuan Dai, Ke Xu, Jiamin Xu, Lili He, Rynson W.H. Lau, Weiwei Xu<sup>†</sup><br>
 International Conference on Machine Learning (**ICML**) 2026<br>
-<i class="fas fa-fw fa-globe"></i>Project /
-<i class="fas fa-fw fa-file-pdf"></i>Paper /
-<i class="fas fa-fw fa-video"></i>Video /
+[<i class="fas fa-fw fa-globe"></i>Project](https://zdlarry.github.io/projects/TurboGS) /
+[<i class="fas fa-fw fa-file-pdf"></i>Paper](./files/papers/turbogs.pdf) /
+[<i class="fas fa-fw fa-video"></i>Video](https://www.youtube.com/watch?v=i2A80iC1k4Q) /
 <i class="fab fa-fw fa-github"></i>Github<br>
 *TurboGS speeds up 3DGS via error-guided sparse pixel optimization and error-driven density control, delivering up to 10x faster training than 3DGS with comparable rendering quality.*
 <br>

@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TurboGS: Accelerating 3D Gaussian Splatting via Error-Guided Sparse Pixel Sampling and Optimization</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+
+    <style>
+      #videoCarousel, #videoCarousel2, #videoCarousel3{
+          position:relative;
+      }
+
+      .video-wrapper{
+          display:flex;
+          justify-content:center;
+          align-items:center;
+      }
+
+      .demo-video{
+          width:100%;
+          max-width:1200px;
+          height:auto;
+          /*border-radius:10px;*/
+      }
+
+      /* ================= Arrow ================= */
+
+      .video-arrow{
+          position:absolute;
+          top:50%;
+          transform:translateY(-50%);
+          width:55px;
+          height:55px;
+          border:none;
+          border-radius:50%;
+          background:rgba(170,180,180,0.88);
+          color:white;
+          font-size:35px;
+          font-weight:bold;
+          line-height:55px;
+          text-align:center;
+          cursor:pointer;
+          transition:all 0.25s;
+          z-index:999;
+          outline:none;
+      }
+
+      .video-prev, .video-prev2, .video-prev3{
+          left:18px;
+      }
+
+      .video-next, .video-next2, .video-next3{
+          right:18px;
+      }
+
+      .video-arrow:hover{
+          background:rgba(130,140,130,0.95);
+          transform:translateY(-50%) scale(1.08);
+      }
+
+      .video-arrow:focus{
+          outline:none;
+      }
+
+      /* optional */
+      .carousel-inner{
+          overflow:hidden;
+      }
+    </style>
+  </head>
+
+  <!-- cover -->
+  <section>
+    <div class="jumbotron text-center mt-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>
+                <b>
+                  <span style="
+                      font-weight:800;
+                      background: linear-gradient(
+                          90deg,
+                          #EED200 0%,
+                          #EED95C 20%,
+                          #6BE5FF 60%,
+                          #1E90FF 100%
+                      );
+                      -webkit-background-clip: text;
+                      -webkit-text-fill-color: transparent;
+                      background-clip: text;
+                      color: transparent;
+                  ">TurboGS
+                  </span>
+                </b>: Accelerating 3D Gaussian Splatting via Error-Guided
+                <br> Sparse Pixel Sampling and Optimization
+            </h2>
+            <h3 style="color:#5a6268; margin-top: 16px;">ICML 2026</h3>
+            <!-- <h5 style="color:#5a6268;">(Journal Track)</h5> -->
+            <hr>
+            <h5>
+                <a href="https://zdlarry.github.io/" target="_blank"><b>Zheng Dong</b></a><sup>†1</sup>,&nbsp;
+                Daifei Qiu<sup>2</sup>,&nbsp;
+                <a href="https://turandai.github.io/" target="_blank">Pinxuan Dai</a><sup>3</sup>,&nbsp;
+                <a href="https://kkbless.github.io/" target="_blank">Ke Xu</a><sup>4</sup>,&nbsp;
+                <a href="https://superxjm.github.io/" target="_blank">Jiamin Xu</a><sup>5</sup>,&nbsp;
+                <a href="https://baike.baidu.com/item/%E4%BD%95%E5%88%A9%E5%8A%9B/8987952" target="_blank">Lili He</a><sup>1</sup>,&nbsp;
+                <a href="https://www.cs.cityu.edu.hk/~rynson/" target="_blank">Rynson W.H. Lau</a><sup>4</sup>,&nbsp;
+                <a href="http://www.cad.zju.edu.cn/home/weiweixu/weiweixu_en.htm" target="_blank"><b>Weiwei Xu</b></a><sup>†3</sup>
+            </h5>
+            <p>
+                <sup>1</sup> Zhejiang Sci-Tech University
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <sup>2</sup> Malanshan Audio & Video Laboratory
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <sup>3</sup> CAD & CG Laboratory, Zhejiang University
+                <br>
+                <sup>4</sup> City University of Hong Kong
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <sup>5</sup> Hangzhou Dianzi University
+            </p>
+            <p style="font-size:14px; color:#666; margin-top: -4px;"> <sup>†</sup> Corresponding Authors </p>
+            <div class="row justify-content-center">
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://zdlarry.github.io/files/papers/turbogs.pdf" role="button"  target="_blank">
+                    <i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;Paper</a> </p>
+              </div>
+              <div class="column">
+                <p class="mb-5"><a class="btn btn-large btn-light" href="https://www.youtube.com/watch?v=i2A80iC1k4Q" role="button"  target="_blank">
+                  <i class="fa fa-youtube"></i>&nbsp;&nbsp;Video</a> </p>
+            </div>
+              <!-- <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="" role="button" style="background-color: grey;">
+                    <i class="fa fa-github"></i>&nbsp;&nbsp;Github</a> </p>
+              </div> -->
+              <!-- <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com/zdlarr/SAILOR/#data" role="button"  target="_blank">
+                    <i class="fa fa-database"></i>&nbsp;&nbsp;Data</a> </p>
+              </div> -->
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="" role="button">
+                    <i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp;Slides</a> </p>
+              </div>
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="" role="button" style="background-color: grey;">
+                    <i class="fa fa-github"></i>&nbsp;&nbsp;Github (Coming Soon)</a> </p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- abstract -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3><b>Abstract</b></h3>
+          <hr style="margin-top:0px">
+          <img src="assets/teaser.png" width="100%" alt=""/>
+          <h6 style="color:#8899a5; margin-top:20px; text-align:justify;" ><b>TL;DR : </b>We propose TurboGS, a novel framework that accelerates 3DGS optimization while delivering high-quality novel view rendering across scene scales. By introducing <b style="color:#8899e5">error-guided sparse-pixel optimization</b> and <b style="color:#8899e5">Gaussian density control</b>, TurboGS converges faster to better results <b style="color:#8899e5">within ~100s</b>.</h6>
+          <!-- <div style="margin-top:15px;">
+            <video width="85%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+                <source src="assets/demo_results.mp4" type="video/mp4">
+            </video>
+          </div> -->
+          <!-- <h6 style="color:#8899a5; margin-top:5px;" ><b style="color:#8899e5">Surface Point Cloud</b> and <b style="color:#8899e5">Free-View Rendering</b> from 4-View RGBD Streams ( <b style="color:#8899e5">Unseen Performers</b> ).</h6> -->
+
+          <p style="margin-top:20px; text-align:justify; text-justify:inter-word; line-height:1.7;">
+            Consumer-level applications require fast optimization of 3D Gaussian Splatting (3DGS) with high-fidelity novel view rendering. However, existing 3DGS acceleration approaches still incur substantial computation on redundant pixels while sacrificing fine details. In this paper, we present TurboGS, an <span style="text-decoration: underline;"><b>error-guided training framework that accelerates 3DGS by concentrating optimization on perceptually informative pixels</b></span>. TurboGS is built upon four core components: <b>(1)</b> a tile-wise sparse pixel sampling, which, driven by multi-view reconstruction errors during training, prioritizes challenging regions and skips well-reconstructed ones to avoid redundant gradient computation; <b>(2)</b> a tile-wise structure-aware loss with sparse Normalized Cross-Correlation, which provides sparse yet effective supervision to preserve fine details and stabilize training; <b>(3)</b> an error-driven Gaussian density control strategy, which dynamically allocates model capacity and removes redundant primitives; and <b>(4)</b> a tailored hybrid optimizer that couples Hessian-informed updates with Adam moment damping to stabilize and improve convergence under sparse supervision. Experiments on standard benchmarks demonstrate that TurboGS can deliver on par or superior rendering quality within 100 seconds on a single RTX 5090 GPU card (up to ∼10× training speedup over vanilla 3DGS).
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="container " style="margin-top:-15px;">
+      <div class="row">
+        <div class="col-12 text-center">
+            <h3><b>Overview Video of <span style="
+                      font-weight:800;
+                      background: linear-gradient(
+                          90deg,
+                          #EED200 0%,
+                          #EED95C 20%,
+                          #6BE5FF 60%,
+                          #1E90FF 100%
+                      );
+                      -webkit-background-clip: text;
+                      -webkit-text-fill-color: transparent;
+                      background-clip: text;
+                      color: transparent;
+                  ">TurboGS
+                  </span></b></h3>
+            <hr style="margin-top:0px">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe style="clip-path: inset(1px 1px)" width="100%" height="100%" src="https://www.youtube.com/embed/i2A80iC1k4Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Video Demo Section ===================== -->
+  <div class="container" style="margin-top:25px;">
+      <div class="row">
+          <div class="col-12 text-center">
+              <h3 style="color:#3B82B6;">
+                  <b>Optimization Progress Visualization</b> <span style="color:#E6B422; font-size:0.88em; font-weight:600;">(<i>Park, OMMO, Bicycle, Flowers</i>)</span>
+              </h3>
+              <hr style="margin-top:0px;">
+          </div>
+      </div>
+
+      <div id="videoCarousel" class="carousel slide" data-interval="false">
+
+          <div class="carousel-inner">
+
+              <!-- ================= Video 1 ================= -->
+              <div class="carousel-item active">
+                  <div class="video-wrapper">
+
+                      <video class="demo-video"
+                             autoplay
+                             muted
+                             controls
+                             playsinline
+                             preload="auto">
+                          <source src="assets/demo_park.mp4" type="video/mp4">
+                      </video>
+
+                  </div>
+              </div>
+
+              <div class="carousel-item">
+                  <div class="video-wrapper">
+                      <video class="demo-video"
+                             muted
+                             controls
+                             playsinline
+                             preload="metadata">
+                          <source src="assets/demo_ommo.mp4" type="video/mp4">
+                      </video>
+                  </div>
+              </div>
+
+              <!-- ================= Video 2 ================= -->
+              <div class="carousel-item">
+                  <div class="video-wrapper">
+                      <video class="demo-video"
+                             muted
+                             controls
+                             playsinline
+                             preload="metadata">
+                          <source src="assets/demo_bicycle.mp4" type="video/mp4">
+                      </video>
+                  </div>
+              </div>
+
+              <div class="carousel-item">
+                  <div class="video-wrapper">
+                      <video class="demo-video"
+                             muted
+                             controls
+                             playsinline
+                             preload="metadata">
+                          <source src="assets/demo_flowers.mp4" type="video/mp4">
+                      </video>
+                  </div>
+              </div>
+
+          </div>
+
+
+          <!-- Left Button -->
+
+          <button class="video-arrow video-prev"
+                  type="button">
+              &#10094;
+          </button>
+
+
+          <!-- Right Button -->
+
+          <button class="video-arrow video-next"
+                  type="button">
+              &#10095;
+          </button>
+
+
+      </div>
+  </div>
+
+
+  <div class="container" style="margin-top:25px;">
+      <div class="row">
+          <div class="col-12 text-center">
+              <h3 style="color:#3B82B6;">
+                  <b>Other Rendering Results</b> <span style="color:#E6B422; font-size:0.88em; font-weight:600;">(<i>OMMO, Rubble, DL3DV-10K</i>)</span>
+              </h3>
+              <hr style="margin-top:0px;">
+          </div>
+      </div>
+
+      <div id="videoCarousel2" class="carousel slide" data-interval="false">
+
+          <div class="carousel-inner">
+
+              <!-- ================= Video 1 ================= -->
+              <div class="carousel-item active">
+                  <div class="video-wrapper">
+
+                      <video class="demo-video"
+                             autoplay
+                             muted
+                             controls
+                             playsinline
+                             preload="auto">
+                          <source src="assets/ommo_two_results.mp4" type="video/mp4">
+                      </video>
+
+                  </div>
+              </div>
+
+              <div class="carousel-item">
+                  <div class="video-wrapper">
+                      <video class="demo-video"
+                             muted
+                             controls
+                             playsinline
+                             preload="metadata">
+                          <source src="assets/rubble_two_results.mp4" type="video/mp4">
+                      </video>
+                  </div>
+              </div>
+
+              <div class="carousel-item">
+                  <div class="video-wrapper">
+                      <video class="demo-video"
+                             muted
+                             controls
+                             playsinline
+                             preload="metadata">
+                          <source src="assets/dl3dv_videos.mp4" type="video/mp4">
+                      </video>
+                  </div>
+              </div>
+
+          </div>
+
+          <button class="video-arrow video-prev2"
+                  type="button">
+              &#10094;
+          </button>
+
+          <button class="video-arrow video-next2"
+                  type="button">
+              &#10095;
+          </button>
+
+
+      </div>
+  </div>
+
+
+  <div class="container" style="margin-top:25px;">
+      <div class="row">
+          <div class="col-12 text-center">
+              <h3 style="color:#3B82B6;">
+                  <b>Comparisons of Optimization Process</b> <span style="color:#E6B422; font-size:0.88em; font-weight:600;">(<i>Bicycle, Park, Flowers</i>)</span>
+              </h3>
+              <hr style="margin-top:0px;">
+          </div>
+      </div>
+
+      <div id="videoCarousel3" class="carousel slide" data-interval="false">
+
+          <div class="carousel-inner">
+
+              <!-- ================= Video 1 ================= -->
+              <div class="carousel-item active">
+                  <div class="video-wrapper">
+
+                      <video class="demo-video"
+                             autoplay
+                             muted
+                             controls
+                             playsinline
+                             preload="auto">
+                          <source src="assets/bicycle_optimization.mp4" type="video/mp4">
+                      </video>
+
+                  </div>
+              </div>
+
+              <div class="carousel-item">
+                  <div class="video-wrapper">
+                      <video class="demo-video"
+                             muted
+                             controls
+                             playsinline
+                             preload="metadata">
+                          <source src="assets/park_optimization.mp4" type="video/mp4">
+                      </video>
+                  </div>
+              </div>
+
+              <div class="carousel-item">
+                  <div class="video-wrapper">
+                      <video class="demo-video"
+                             muted
+                             controls
+                             playsinline
+                             preload="metadata">
+                          <source src="assets/flower_optimization.mp4" type="video/mp4">
+                      </video>
+                  </div>
+              </div>
+
+          </div>
+
+
+          <!-- Left Button -->
+
+          <button class="video-arrow video-prev3"
+                  type="button">
+              &#10094;
+          </button>
+
+
+          <!-- Right Button -->
+
+          <button class="video-arrow video-next3"
+                  type="button">
+              &#10095;
+          </button>
+
+
+      </div>
+  </div>
+
+  <script>
+
+  $(function(){
+
+      $(".video-prev").click(function(e){
+          e.preventDefault();
+          $("#videoCarousel").carousel("prev");
+      });
+
+
+      $(".video-next").click(function(e){
+          e.preventDefault();
+          $("#videoCarousel").carousel("next");
+      });
+
+      $("#videoCarousel").on("slide.bs.carousel",function(){
+          $("#videoCarousel video").each(function(){
+              this.pause();
+          });
+      });
+
+      $("#videoCarousel").on("slid.bs.carousel",function(){
+
+          let $items=$("#videoCarousel .carousel-item");
+
+          let idx=$items.index($("#videoCarousel .carousel-item.active"));
+
+          let v=$items.eq(idx).find("video")[0];
+
+          if(v){
+              v.currentTime=0;
+              v.play().catch(()=>{});
+          }
+
+          // ------------------------
+          // preload next video
+          // ------------------------
+
+          let next=(idx+1)%$items.length;
+          let nextVideo=$items.eq(next).find("video")[0];
+          if(nextVideo && nextVideo.preload!=="auto"){
+              nextVideo.preload="auto";
+          }
+
+      });
+
+      $("#videoCarousel video").each(function(){
+          this.addEventListener("ended",function(){
+              $("#videoCarousel").carousel("next");
+
+          });
+      });
+
+
+
+      $(".video-prev3").click(function(e){
+          e.preventDefault();
+          $("#videoCarousel3").carousel("prev");
+      });
+
+
+      $(".video-next3").click(function(e){
+          e.preventDefault();
+          $("#videoCarousel3").carousel("next");
+      });
+
+      $("#videoCarousel3").on("slide.bs.carousel",function(){
+          $("#videoCarousel3 video").each(function(){
+              this.pause();
+          });
+      });
+
+      $("#videoCarousel3").on("slid.bs.carousel",function(){
+
+          let $items=$("#videoCarousel3 .carousel-item");
+
+          let idx=$items.index($("#videoCarousel3 .carousel-item.active"));
+
+          let v=$items.eq(idx).find("video")[0];
+
+          if(v){
+              v.currentTime=0;
+              v.play().catch(()=>{});
+          }
+
+          // ------------------------
+          // preload next video
+          // ------------------------
+
+          let next=(idx+1)%$items.length;
+          let nextVideo=$items.eq(next).find("video")[0];
+          if(nextVideo && nextVideo.preload!=="auto"){
+              nextVideo.preload="auto";
+          }
+
+      });
+
+      $("#videoCarousel3 video").each(function(){
+          this.addEventListener("ended",function(){
+              $("#videoCarousel3").carousel("next");
+          });
+      });
+
+
+
+      $(".video-prev2").click(function(e){
+          e.preventDefault();
+          $("#videoCarousel2").carousel("prev");
+      });
+
+
+      $(".video-next2").click(function(e){
+          e.preventDefault();
+          $("#videoCarousel2").carousel("next");
+      });
+
+      $("#videoCarousel2").on("slide.bs.carousel",function(){
+          $("#videoCarousel2 video").each(function(){
+              this.pause();
+          });
+      });
+
+      $("#videoCarousel2").on("slid.bs.carousel",function(){
+
+          let $items=$("#videoCarousel2 .carousel-item");
+
+          let idx=$items.index($("#videoCarousel2 .carousel-item.active"));
+
+          let v=$items.eq(idx).find("video")[0];
+
+          if(v){
+              v.currentTime=0;
+              v.play().catch(()=>{});
+          }
+
+          // ------------------------
+          // preload next video
+          // ------------------------
+
+          let next=(idx+1)%$items.length;
+          let nextVideo=$items.eq(next).find("video")[0];
+          if(nextVideo && nextVideo.preload!=="auto"){
+              nextVideo.preload="auto";
+          }
+
+      });
+
+      $("#videoCarousel2 video").each(function(){
+          this.addEventListener("ended",function(){
+              $("#videoCarousel2").carousel("next");
+          });
+      });
+  });
+
+  </script>
+
+  <br>
+
+  <section>
+    <div class="container" style="margin-top:12px;">
+      <div class="row">
+          <div class="col-12 text-center">
+            <h3><b>PipeLine</b></h3>
+            <hr style="margin-top:0px">
+            <img src="assets/pipeline.png" width="100%" alt=""/>
+            <p style="margin-top:20px; text-align:justify; text-justify:inter-word; line-height:1.7;">
+              <span style="text-decoration: underline;"><b>TurboGS framework overview</b></span>. Unlike existing 3DGS (Kerbl et al., 2023 [3DGS]; Mallick et al., 2024 [TamingGS]; Ren et al., 2026 [FastGS]) methods that rasterize the entire tile in each iteration, TurboGS allocates more attention to pixels that are difficult to reconstruct and reduces gradient backpropagation in well-interpreted regions, thereby lowering the rasterization cost per iteration. To achieve this, TurboGS records multi-view pixel reconstruction errors and performs tile-wise sparse pixel sampling based on pixel error and age. Built upon this sparse sampling scheme, we further incorporate a local structure-aware loss (sparse NCC for pixel supervision) and error-driven density control to preserve fine details.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container" style="margin-top:10px;">
+      <div class="row">
+          <div class="col-12 text-center">
+            <h3 style="color:#3B82B6;">
+                  <b>Pixel Rasterization in TurboGS</b>
+              </h3>
+            <hr style="margin-top:0px">
+            <img src="assets/rasterization.png" width="100%" alt=""/>
+            <p style="margin-top:20px; text-align:justify; text-justify:inter-word; line-height:1.7;">
+              <span style="text-decoration: underline;"><b>Pixel rasterization in TurboGS</b></span>. Forward rasterization follows tile-parallel execution by organizing sampled pixels in tile order, while the backward pass adopts per-Gaussian splat parallelization to propagate gradients only over sparse sampled pixels
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container" style="margin-top:10px;">
+      <div class="row">
+          <div class="col-12 text-center">
+            <h3 style="color:#B6B412;">
+                  <b>Error Maps During Training</b>
+              </h3>
+            <hr style="margin-top:0px">
+            <img src="assets/error_map_ommo10_data.png" width="100%" alt=""/>
+            <p style="margin-top:20px; text-align:center; text-justify:inter-word; line-height:1.7;">
+              Pixelwise error maps, rendering results, and the curves over training (for an example on OMMO-10 data)
+            </p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- citing -->
+  <div class="container" style="margin-top:12px;">
+    <div class="row ">
+      <div class="col-12 text-center">
+          <h4><b>Citation</b></h4>
+          <hr style="margin-top:0px">
+              <pre style="background-color: #e9eeef;padding: 1.25em 0em; text-align:justify; text-justify:inter-word;">
+                <code>@inproceedings{dong2026turbogs,
+                  title={TurboGS: Accelerating 3D Gaussian Splatting via Error-Guided Sparse Pixel Sampling and Optimization},
+                  author={Dong, Zheng and Qiu, Daifei and Dai, Pinxuan and Xu, Ke and Xu, Jiamin 
+                          and He, Lili and Lau, Rynson WH and Xu, Weiwei},
+                  booktitle={ICML},
+                  year={2026},
+                }
+                </code></pre>
+          <hr>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
