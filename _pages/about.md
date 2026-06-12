@@ -94,7 +94,7 @@ Eurographics Symposium on Rendering 37th (**EGSR**) 2026<br>
 <i class="fas fa-fw fa-file-pdf"></i>Paper /
 <i class="fas fa-fw fa-video"></i>Video /
 <i class="fab fa-fw fa-github"></i>Github<br>
-* CoherentEdit achieves controllable video editing by integrating a unified multimodal embedding and enforcing consistency via an extracted implicit lighting representation.*
+*CoherentEdit achieves controllable video editing by integrating a unified multimodal embedding and enforcing consistency via an extracted implicit lighting representation.*
 <br>
 
 <div style="margin-top: 7px;"></div>
