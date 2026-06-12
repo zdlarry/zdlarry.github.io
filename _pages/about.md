@@ -85,13 +85,31 @@ International Conference on Machine Learning (**ICML**) 2026<br>
 
 <div style="margin-top: 20px;"></div>
 
+<img align="left" width="320" height="160" src="./images/papers/egsr26_coherentedit.png" style="padding-right:20px; padding-top:0px"/>
+
+<b>CoherentEdit: Unified Multimodal Understanding and Implicit Lighting Conditioned Diffusion for Controllable Video Editing</b><br>
+Guojun Lei, <b>Zheng Dong</b>, Hongbing Yang, Hong Li, Yikai Wang, Chi Wang, Weiwei Xu<sup>†</sup><br>
+Eurographics Symposium on Rendering 37th (**EGSR**) 2026<br>
+<i class="fas fa-fw fa-globe"></i>Project /
+<i class="fas fa-fw fa-file-pdf"></i>Paper /
+<i class="fas fa-fw fa-video"></i>Video /
+<i class="fab fa-fw fa-github"></i>Github<br>
+* CoherentEdit achieves controllable video editing by integrating a unified multimodal embedding and enforcing consistency via an extracted implicit lighting representation.*
+<br>
+
+<div style="margin-top: 7px;"></div>
+
+---
+
+<div style="margin-top: 20px;"></div>
+
 <img align="left" width="320" height="160" src="./images/papers/siga25_LTC.png" style="padding-right:20px; padding-top:0px"/>
 
 <b>Efficient Object Reconstruction with Differentiable Area Light Shading</b><br>
 Yaoan Gao, Jiamin Xu, James Tompkin, Qi Wang, <b>Zheng Dong</b>, Hujun Bao, Yujun Shen, Huamin Wang, Changqing Zou, Weiwei Xu<sup>†</sup><br>
 Proc. ACM <b>SIGGRAPH Asia</b> 2025<br>
 <i class="fas fa-fw fa-globe"></i>Project /
-<i class="fas fa-fw fa-file-pdf"></i>Paper /
+[<i class="fas fa-fw fa-file-pdf"></i>Paper](./files/papers/area_light_shading.pdf) /
 <i class="fas fa-fw fa-video"></i>Video /
 <i class="fab fa-fw fa-github"></i>Github<br>
 *Active area lighting combined with LTC acceleration enables more accurate and efficient material reconstruction, reducing photo requirements and improving relighting quality.*
