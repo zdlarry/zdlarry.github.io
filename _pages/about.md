@@ -91,7 +91,7 @@ International Conference on Machine Learning (**ICML**) 2026<br>
 Guojun Lei, <b>Zheng Dong</b>, Hongbing Yang, Hong Li, Yikai Wang, Chi Wang, Weiwei Xu<sup>†</sup><br>
 Eurographics Symposium on Rendering 37th (**EGSR**) 2026<br>
 <i class="fas fa-fw fa-globe"></i>Project /
-<i class="fas fa-fw fa-file-pdf"></i>Paper /
+[<i class="fas fa-fw fa-file-pdf"></i>Paper](./files/papers/egsr26.pdf) /
 <i class="fas fa-fw fa-video"></i>Video /
 <i class="fab fa-fw fa-github"></i>Github<br>
 *CoherentEdit achieves controllable video editing by integrating a unified multimodal embedding and enforcing consistency via an extracted implicit lighting representation.*
