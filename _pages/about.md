@@ -31,7 +31,12 @@ Zheng Dong is currently a **research fellow** (特聘研究员) at **Zhejiang Sc
 
 ## Academic Service
 
-**Reviewer**: SIGGRAPH, CVPR, ICCV, NeurIPS, IJCV, TVCG, CAVW, etc
+**Conference Reviewer**: SIGGRAPH, SIGGRAPH(Asia), CVPR, ICCV, NeurIPS, ICML, AAAI, PG
+
+**Journal Reviewer**: TOG, IJCV, TVCG, CAVW
+
+**Award**: ICML Silver Reviewer <a href="https://icml.cc/Conferences/2026/ProgramCommittee" target="_blank">2026</a>
+
 
 <span class='anchor' id='background' style="padding-top:10px"></span>
 
