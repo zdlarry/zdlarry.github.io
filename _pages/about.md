@@ -72,6 +72,24 @@ Zheng Dong is currently a **research fellow** (特聘研究员) at **Zhejiang Sc
 
 <div style="margin-top: 20px;"></div>
 
+<img align="left" width="320" height="160" src="./images/papers/tpami_flare_removal.png" style="padding-right:20px; padding-top:0px"/>
+
+<b>Reflective Flare Removal Using Image Bursts</b><br>
+Ke Xu, <b>Zheng Dong</b>, Weiwei Xu, Gerhard Petrus Hancke, Rynson W.H. Lau<sup>†</sup><br>
+IEEE Transactions on Pattern Analysis and Machine Intelligence (**T-PAMI**) 2026<br>
+<i class="fas fa-fw fa-globe"></i>Project /
+<i class="fas fa-fw fa-file-pdf"></i>Paper /
+<i class="fas fa-fw fa-video"></i>Video /
+<i class="fab fa-fw fa-github"></i>Github<br>
+*We leverage the dynamic motion characteristics of flare regions captured across a burst image sequence, to guide and ehance the reflective flare removal.*
+<br>
+
+<div style="margin-top: 7px;"></div>
+
+---
+
+<div style="margin-top: 20px;"></div>
+
 <img align="left" width="320" height="160" src="./images/papers/icml26_turboGS.png" style="padding-right:20px; padding-top:0px"/>
 
 <b>TurboGS: Accelerating 3D Gaussian Splatting via Error-Guided Sparse Pixel Sampling and Optimization</b><br>
