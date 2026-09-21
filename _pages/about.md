@@ -78,7 +78,7 @@ Zheng Dong is currently a **research fellow** (特聘研究员) at **Zhejiang Sc
 Ke Xu, <b>Zheng Dong</b>, Weiwei Xu, Gerhard Petrus Hancke, Rynson W.H. Lau<sup>†</sup><br>
 IEEE Transactions on Pattern Analysis and Machine Intelligence (**T-PAMI**) 2026<br>
 <i class="fas fa-fw fa-globe"></i>Project /
-<i class="fas fa-fw fa-file-pdf"></i>Paper /
+[<i class="fas fa-fw fa-file-pdf"></i>Paper](./files/papers/burst_pami26.pdf) /
 <i class="fas fa-fw fa-video"></i>Video /
 <i class="fab fa-fw fa-github"></i>Github<br>
 *We leverage the dynamic motion characteristics of flare regions captured across a burst image sequence, to guide and ehance the reflective flare removal.*
