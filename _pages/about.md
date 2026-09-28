@@ -102,7 +102,7 @@ Annual Conference on Neural Information Processing Systems (**NeurIPS**) 2026<br
 *EditDistill distill the image editing into video editing through a compact edit latent feature, which guides the video diffusion DiT for diverse edits in a lightweight manner.*
 <br>
 
-<div style="margin-top: 12px;"></div>
+<div style="margin-top: 20px;"></div>
 
 ---
 
