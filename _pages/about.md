@@ -33,7 +33,7 @@ Zheng Dong is currently a **research fellow** (特聘研究员) at **Zhejiang Sc
 
 **Conference Reviewer**: SIGGRAPH, SIGGRAPH(Asia), CVPR, ICCV, NeurIPS, ICML, AAAI, PG
 
-**Journal Reviewer**: TOG, IJCV, TVCG, CAVW
+**Journal Reviewer**: TOG, IJCV, TVCG, TMM, CAVW
 
 **Award**: ICML Silver Reviewer <a href="https://icml.cc/Conferences/2026/ProgramCommittee" target="_blank">2026</a>
 
@@ -72,24 +72,6 @@ Zheng Dong is currently a **research fellow** (特聘研究员) at **Zhejiang Sc
 
 <div style="margin-top: 20px;"></div>
 
-<img align="left" width="320" height="160" src="./images/papers/tpami_flare_removal.png" style="padding-right:20px; padding-top:0px"/>
-
-<b>Reflective Flare Removal Using Image Bursts</b><br>
-Ke Xu, <b>Zheng Dong</b>, Weiwei Xu, Gerhard Petrus Hancke, Rynson W.H. Lau<sup>†</sup><br>
-IEEE Transactions on Pattern Analysis and Machine Intelligence (**T-PAMI**) 2026<br>
-<i class="fas fa-fw fa-globe"></i>Project /
-[<i class="fas fa-fw fa-file-pdf"></i>Paper](./files/papers/burst_pami26.pdf) /
-<i class="fas fa-fw fa-video"></i>Video /
-<i class="fab fa-fw fa-github"></i>Github<br>
-*We leverage the dynamic motion characteristics of flare regions captured across a burst image sequence, to guide and ehance the reflective flare removal.*
-<br>
-
-<div style="margin-top: 7px;"></div>
-
----
-
-<div style="margin-top: 20px;"></div>
-
 <img align="left" width="320" height="160" src="./images/papers/icml26_turboGS.png" style="padding-right:20px; padding-top:0px"/>
 
 <b>TurboGS: Accelerating 3D Gaussian Splatting via Error-Guided Sparse Pixel Sampling and Optimization</b><br>
@@ -108,12 +90,48 @@ International Conference on Machine Learning (**ICML**) 2026<br>
 
 <div style="margin-top: 20px;"></div>
 
+<img align="left" width="320" height="160" src="./images/papers/nips26_editdistill.png" style="padding-right:20px; padding-top:0px"/>
+
+<b>EditDistill: Is It Possible to Guide Video Editing with Image Editing ?</b><br>
+Guojun Lei, Hong Li, Hongbing Yang, Lixue Gong, Chi Wang, <b>Zheng Dong<sup>†</sup></b><br>
+Annual Conference on Neural Information Processing Systems (**NeurIPS**) 2026<br>
+[<i class="fas fa-fw fa-globe"></i>Project](https://anonymous-project-new.github.io/anonymous-project/) /
+[<i class="fas fa-fw fa-file-pdf"></i>Paper] /
+<i class="fas fa-fw fa-video"></i>Video /
+<i class="fab fa-fw fa-github"></i>Github<br>
+*EditDistill distill the image editing into video editing through a compact edit latent feature, which guides the video diffusion DiT for diverse edits in a lightweight manner.*
+<br>
+
+<div style="margin-top: 7px;"></div>
+
+---
+
+<div style="margin-top: 20px;"></div>
+
+<img align="left" width="320" height="160" src="./images/papers/tpami_flare_removal.png" style="padding-right:20px; padding-top:0px"/>
+
+<b>Reflective Flare Removal Using Image Bursts</b><br>
+Ke Xu, <b>Zheng Dong</b>, Weiwei Xu, Gerhard Petrus Hancke, Rynson W.H. Lau<sup>†</sup><br>
+IEEE Transactions on Pattern Analysis and Machine Intelligence (**T-PAMI**) 2026<br>
+<i class="fas fa-fw fa-globe"></i>Project /
+[<i class="fas fa-fw fa-file-pdf"></i>Paper](./files/papers/burst_pami26.pdf) /
+<i class="fas fa-fw fa-video"></i>Video /
+<i class="fab fa-fw fa-github"></i>Github<br>
+*We leverage the dynamic motion characteristics of flare regions captured across a burst image sequence, to guide and ehance the reflective flare removal.*
+<br>
+
+<div style="margin-top: 7px;"></div>
+
+---
+
+<div style="margin-top: 20px;"></div>
+
 <img align="left" width="320" height="160" src="./images/papers/egsr26_coherentedit.png" style="padding-right:20px; padding-top:0px"/>
 
 <b>CoherentEdit: Unified Multimodal Understanding and Implicit Lighting Conditioned Diffusion for Controllable Video Editing</b><br>
 Guojun Lei, <b>Zheng Dong</b>, Hongbing Yang, Hong Li, Yikai Wang, Chi Wang, Weiwei Xu<sup>†</sup><br>
 Eurographics Symposium on Rendering 37th (**EGSR**) 2026<br>
-<i class="fas fa-fw fa-globe"></i>Project /
+[<i class="fas fa-fw fa-globe"></i>Project](https://anonymous-name-paper.github.io/anonymous-project/) /
 [<i class="fas fa-fw fa-file-pdf"></i>Paper](./files/papers/egsr26.pdf) /
 <i class="fas fa-fw fa-video"></i>Video /
 <i class="fab fa-fw fa-github"></i>Github<br>
