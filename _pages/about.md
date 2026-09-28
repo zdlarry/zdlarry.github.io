@@ -96,7 +96,7 @@ International Conference on Machine Learning (**ICML**) 2026<br>
 Guojun Lei, Hong Li, Hongbing Yang, Lixue Gong, Chi Wang, <b>Zheng Dong<sup>†</sup></b><br>
 Annual Conference on Neural Information Processing Systems (**NeurIPS**) 2026<br>
 [<i class="fas fa-fw fa-globe"></i>Project](https://anonymous-project-new.github.io/anonymous-project/) /
-[<i class="fas fa-fw fa-file-pdf"></i>Paper] /
+<i class="fas fa-fw fa-file-pdf"></i>Paper /
 <i class="fas fa-fw fa-video"></i>Video /
 <i class="fab fa-fw fa-github"></i>Github<br>
 *EditDistill distill the image editing into video editing through a compact edit latent feature, which guides the video diffusion DiT for diverse edits in a lightweight manner.*
