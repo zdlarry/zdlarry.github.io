@@ -72,7 +72,7 @@ Zheng Dong is currently a **research fellow** (特聘研究员) at **Zhejiang Sc
 
 <div style="margin-top: 20px;"></div>
 
-<img align="left" width="320" height="160" src="./images/papers/icml26_turboGS.png" style="padding-right:20px; padding-top:0px"/>
+<img align="left" width="320" height="155" src="./images/papers/icml26_turboGS.png" style="padding-right:20px; padding-top:0px"/>
 
 <b>TurboGS: Accelerating 3D Gaussian Splatting via Error-Guided Sparse Pixel Sampling and Optimization</b><br>
 <b>Zheng Dong</b>, Daifei Qiu, Pinxuan Dai, Ke Xu, Jiamin Xu, Lili He, Rynson W.H. Lau, Weiwei Xu<sup>†</sup><br>
@@ -90,7 +90,7 @@ International Conference on Machine Learning (**ICML**) 2026<br>
 
 <div style="margin-top: 20px;"></div>
 
-<img align="left" width="320" height="160" src="./images/papers/nips26_editdistill.png" style="padding-right:20px; padding-top:0px"/>
+<img align="left" width="320" height="170" src="./images/papers/nips26_editdistill.png" style="padding-right:20px; padding-top:0px"/>
 
 <b>EditDistill: Is It Possible to Guide Video Editing with Image Editing ?</b><br>
 Guojun Lei, Hong Li, Hongbing Yang, Lixue Gong, Chi Wang, <b>Zheng Dong<sup>†</sup></b><br>
