@@ -90,7 +90,7 @@ International Conference on Machine Learning (**ICML**) 2026<br>
 
 <div style="margin-top: 20px;"></div>
 
-<img align="left" width="320" height="170" src="./images/papers/nips26_editdistill.png" style="padding-right:20px; padding-top:0px"/>
+<img align="left" width="320" height="175" src="./images/papers/nips26_editdistill.png" style="padding-right:20px; padding-top:0px"/>
 
 <b>EditDistill: Is It Possible to Guide Video Editing with Image Editing ?</b><br>
 Guojun Lei, Hong Li, Hongbing Yang, Lixue Gong, Chi Wang, <b>Zheng Dong<sup>†</sup></b><br>
@@ -102,7 +102,7 @@ Annual Conference on Neural Information Processing Systems (**NeurIPS**) 2026<br
 *EditDistill distill the image editing into video editing through a compact edit latent feature, which guides the video diffusion DiT for diverse edits in a lightweight manner.*
 <br>
 
-<div style="margin-top: 7px;"></div>
+<div style="margin-top: 12px;"></div>
 
 ---
 
